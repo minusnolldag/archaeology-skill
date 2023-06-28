@@ -1,0 +1,72 @@
+<template id="archaeology-collections-component">
+	<div class="row no-gutters">
+		<div class="col-12 col-md-4">
+			<div class="block-content block-content-full" id="collections-container"></div>
+		</div>
+		<div class="col-12 col-md-8">
+			<div class="block-content block-content-full">
+				<div class="row">
+					<div class="col-12 pb-3">
+						<span class="font-w600 font-size-lg">
+							Clicking an artefact gives the item to the person if the item is in your bank.
+						</span>
+					</div>
+					<div class="col-12" id="selected-collection"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+<template id="archaeology-collections-list-component">
+	<div class="row">
+		<div class="col-12 gutters-tiny">
+			<ul class="nav nav-pills nav-justified">
+				<li class="nav-item">
+					<a class="block nav-link border pointer-enabled font-w600" id="link">
+						<div class="row gutters-tiny">
+							<div class="col-12 col-md-8" id="collection-name">-</div>
+							<div class="col-12 col-md-4" id="collection-progress">- / -</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</template>
+<template id="selected-collection-component">
+	<div class="block block-rounded d-none" id="container">
+		<div class="block-header block-header-default p-2" style="background-color: #1893F5 !important;">
+			<ul class="nav-main nav-main-horizontal nav-main-horizontal-override nav-justified font-size-sm w-100">
+				<li class="nav-item text-left">
+					<h3 class="block-title" id="name">-</h3>
+				</li>
+			</ul>
+		</div>
+		<div class="p-2 bg-combat-inner-dark">
+			<div>
+				<!--<h5 class="font-w600 font-size-lg mb-2">As a collector, I seek rare necklaces; priceless gems that carry captivating tales. Join me on this quest to unveil extraordinary beauty and delve into the secrets of forgotten histories.</h5>-->
+				<h5 class="font-w600 font-size-sm mb-1">Requires:</h5>
+				<ul class="nav-main nav-main-horizontal nav-main-horizontal-override font-w400 font-size-sm" id="required-items"></ul>
+			</div>
+			<div class="font-w600 font-size-sm text-success">
+				Rewards:
+				<ul class="nav-main nav-main-horizontal nav-main-horizontal-override font-w400 font-size-sm">
+					<li class="block block-rounded-double text-center p-1 pr-2 pl-2 mr-2">
+						<img class="skill-icon-xs mr-1" src="https://cdn.melvor.net/core/v018/assets/media/main/coins.svg">
+						<span id="reward-coins"></span>
+					</li>
+					<li class="block block-rounded-double text-center p-1 pr-2 pl-2 mr-2">
+						<span id="reward-xp"></span>
+						<img class="skill-icon-xs mr-1" id="archaeology-skill-logo" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg">
+						<span>Archaeology Skill XP</span>
+					</li>
+					<li class="block block-rounded-double text-center p-1 pr-2 pl-2 mr-2">
+						<span>1</span>
+						<img class="skill-icon-xs mr-1" id="relic-point-image" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg">
+						<span>Archaeology Relic Point</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>

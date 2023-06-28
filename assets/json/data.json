@@ -1,0 +1,5695 @@
+{
+	"data": {
+		"pages": [
+			{
+				"id": "Archaeology",
+				"media": "assets/img/archaeology_skill_logo.png",
+				"containerID": "archaeology-container",
+				"headerBgClass": "bg-archaeology",
+				"hasGameGuide": false,
+				"canBeDefault": true,
+				"customName": "Archaeology",
+				"skills": [
+					"archaeology_skill:Archaeology"
+				],
+				"action": "archaeology_skill:Archaeology"
+			}
+		],
+		"items": [
+			{
+				"id": "Archaeology_New_Joiner",
+				"name": "Archaeology - New Joiner",
+				"category": "Misc",
+				"type": "Special",
+				"media": "assets/img/books/archaeology_new_joiner.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": true,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0,
+				"itemType": "Readable",
+				"modalID": "modal-book-archaeology_skill:Archaeology_New_Joiner"
+			},
+			{
+				"id": "Tome_Of_Undying_Pharaohs",
+				"name": "Tome Of Undying Pharaohs",
+				"category": "Misc",
+				"type": "Special",
+				"media": "assets/img/books/tome_of_undying_pharaohs.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": true,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0,
+				"itemType": "Readable",
+				"modalID": "modal-book-archaeology_skill:Tome_Of_Undying_Pharaohs"
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Bronze_Mattock",
+				"name": "Bronze Mattock",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/bronze_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 1
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Iron_Mattock",
+				"name": "Iron Mattock",
+				"customDescription": "Passive: +2% Material drop rate.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/iron_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 9,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 1
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Steel_Mattock",
+				"name": "Steel Mattock",
+				"customDescription": "Passive: +3% Material drop rate.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/steel_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 14,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 5
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Mithril_Mattock",
+				"name": "Mithril Mattock",
+				"customDescription": "Passive: +4% Material drop rate and -5% Archaeology interval.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/mithril_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 75,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 20
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Adamant_Mattock",
+				"name": "Adamant Mattock",
+				"customDescription": "Passive: +6% Material drop rate and -10% Archaeology interval.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/adamant_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 95,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 30
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Rune_Mattock",
+				"name": "Rune Mattock",
+				"customDescription": "Passive: +8% Material drop rate and -15% Archaeology interval.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/rune_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 160,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 40
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Weapon",
+				"id": "Dragon_Mattock",
+				"name": "Dragon Mattock",
+				"customDescription": "Passive: +10% Material drop rate and -20% Archaeology interval.",
+				"category": "Archaeology",
+				"type": "Archaeology Mattock",
+				"media": "assets/img/mattocks/dragon_mattock.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 650,
+				"attackType": "melee",
+				"tier": "none",
+				"validSlots": [
+					"Weapon"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 60
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 4000
+					}
+				]
+			},
+			{
+				"itemType": "Item",
+				"id": "Glimmering_Azure_Soil",
+				"name": "Glimmering Azure Soil",
+				"category": "Archaeology",
+				"type": "Archaeology Soil",
+				"media": "assets/img/soils/glimmering_azure_soil.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Golden_Sunstone_Sand",
+				"name": "Golden Sunstone Sand",
+				"category": "Archaeology",
+				"type": "Archaeology Soil",
+				"media": "assets/img/soils/golden_sunstone_sand.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Obsidian_Blackened_Soil",
+				"name": "Obsidian Blackened Soil",
+				"category": "Archaeology",
+				"type": "Archaeology Soil",
+				"media": "assets/img/soils/obsidian_blackened_soil.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Item",
+				"id": "Crimson_Dragonblood_Soil",
+				"name": "Crimson Dragonblood Soil",
+				"category": "Archaeology",
+				"type": "Archaeology Soil",
+				"media": "assets/img/soils/crimson_dragonblood_soil.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3
+			},
+			{
+				"itemType": "Ash",
+				"id": "Ancient_Dust",
+				"name": "Ancient Dust",
+				"category": "Archaeology",
+				"type": "Archaeology Bones",
+				"media": "assets/img/bones/ancient_dust.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 150,
+				"prayerPoints": 5
+			},
+			{
+				"itemType": "Item",
+				"id": "Crystalized_Amethyst",
+				"name": "Crystalized Amethyst",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/crystalized_amethyst.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2
+			},
+			{
+				"itemType": "Item",
+				"id": "Elderwood_Essence",
+				"name": "Elderwood Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/elderwood_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2
+			},
+			{
+				"itemType": "Item",
+				"id": "Seraphic_Silver",
+				"name": "Seraphic Silver",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/seraphic_silver.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2
+			},
+			{
+				"itemType": "Item",
+				"id": "Celestial_Jade",
+				"name": "Celestial Jade",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/celestial_jade.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2
+			},
+			{
+				"itemType": "Item",
+				"id": "Arcane_Quartz",
+				"name": "Arcane Quartz",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/arcane_quartz.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 5
+			},
+			{
+				"itemType": "Item",
+				"id": "Lunar_Silk",
+				"name": "Lunar Silk",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/lunar_silk.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 5
+			},
+			{
+				"itemType": "Item",
+				"id": "Primordial_Adamant",
+				"name": "Primordial Adamant",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/primordial_adamant.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 5
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidroot_Vine",
+				"name": "Voidroot Vine",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidroot_vine.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 5
+			},
+			{
+				"itemType": "Item",
+				"id": "Astral_Essence",
+				"name": "Astral Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/astral_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 8
+			},
+			{
+				"itemType": "Item",
+				"id": "Stormforged_Iron",
+				"name": "Stormforged Iron",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/stormforged_iron.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 8
+			},
+			{
+				"itemType": "Item",
+				"id": "Ethereal_Pearl",
+				"name": "Ethereal Pearl",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/ethereal_pearl.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 8
+			},
+			{
+				"itemType": "Item",
+				"id": "Shadowsteel_Alloy",
+				"name": "Shadowsteel Alloy",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/shadowsteel_alloy.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 8
+			},
+			{
+				"itemType": "Item",
+				"id": "Enigmatic_Obsidian",
+				"name": "Enigmatic Obsidian",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/enigmatic_obsidian.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 14
+			},
+			{
+				"itemType": "Item",
+				"id": "Celestial_Feather",
+				"name": "Celestial Feather",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/celestial_feather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 14
+			},
+			{
+				"itemType": "Item",
+				"id": "Essence_Of_Radiance",
+				"name": "Essence Of Radiance",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/essence_of_radiance.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 14
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidfire_Crystal",
+				"name": "Voidfire Crystal",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidfire_crystal.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 14
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Rune_Fabric",
+				"name": "Ancient Rune Fabric",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/ancient_rune_fabric.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 28
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidheart_Ruby",
+				"name": "Voidheart Ruby",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidheart_ruby.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 28
+			},
+			{
+				"itemType": "Item",
+				"id": "Ashen_Emberstone",
+				"name": "Ashen Emberstone",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/ashen_emberstone.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 28
+			},
+			{
+				"itemType": "Item",
+				"id": "Dreamweaver_Silk",
+				"name": "Dreamweaver Silk",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/dreamweaver_silk.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 28
+			},
+			{
+				"itemType": "Item",
+				"id": "Celestial_Opal",
+				"name": "Celestial Opal",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/celestial_opal.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 68
+			},
+			{
+				"itemType": "Item",
+				"id": "Astral_Shards",
+				"name": "Astral Shards",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/astral_shards.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 68
+			},
+			{
+				"itemType": "Item",
+				"id": "Essence_Of_The_Ancients",
+				"name": "Essence Of The Ancients",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/essence_of_the_ancients.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 68
+			},
+			{
+				"itemType": "Item",
+				"id": "Emberglow_Amber",
+				"name": "Emberglow Amber",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/emberglow_amber.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 68
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidborne_Leather",
+				"name": "Voidborne Leather",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidborne_leather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 80
+			},
+			{
+				"itemType": "Item",
+				"id": "Arcanite_Residue",
+				"name": "Arcanite Residue",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/arcanite_residue.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 80
+			},
+			{
+				"itemType": "Item",
+				"id": "Celestial_Topaz",
+				"name": "Celestial Topaz",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/celestial_topaz.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 80
+			},
+			{
+				"itemType": "Item",
+				"id": "Thunderheart_Essence",
+				"name": "Thunderheart Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/thunderheart_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 80
+			},
+			{
+				"itemType": "Item",
+				"id": "Essence_Of_The_Abyss",
+				"name": "Essence Of The Abyss",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/essence_of_the_abyss.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 165
+			},
+			{
+				"itemType": "Item",
+				"id": "Prismatic_Crystalite",
+				"name": "Prismatic Crystalite",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/prismatic_crystalite.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 165
+			},
+			{
+				"itemType": "Item",
+				"id": "Phoenix_Feather",
+				"name": "Phoenix Feather",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/phoenix_feather.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 165
+			},
+			{
+				"itemType": "Item",
+				"id": "Astral_Steel",
+				"name": "Astral Steel",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/astral_steel.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 165
+			},
+			{
+				"itemType": "Item",
+				"id": "Stormblossom_Petals",
+				"name": "Stormblossom Petals",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/stormblossom_petals.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 245
+			},
+			{
+				"itemType": "Item",
+				"id": "Ethereal_Essence",
+				"name": "Ethereal Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/ethereal_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 245
+			},
+			{
+				"itemType": "Item",
+				"id": "Shadowglass_Shard",
+				"name": "Shadowglass Shard",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/shadowglass_shard.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 245
+			},
+			{
+				"itemType": "Item",
+				"id": "Radiant_Starstone",
+				"name": "Radiant Starstone",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/radiant_starstone.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 245
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidweave_Silk",
+				"name": "Voidweave Silk",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidweave_silk.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 620
+			},
+			{
+				"itemType": "Item",
+				"id": "Arcane_Ebonwood",
+				"name": "Arcane Ebonwood",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/arcane_ebonwood.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 620
+			},
+			{
+				"itemType": "Item",
+				"id": "Lunar_Essence",
+				"name": "Lunar Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/lunar_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 620
+			},
+			{
+				"itemType": "Item",
+				"id": "Primordial_Scale",
+				"name": "Primordial Scale",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/primordial_scale.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 620
+			},
+			{
+				"itemType": "Item",
+				"id": "Dreamwalker_Silk",
+				"name": "Dreamwalker Silk",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/dreamwalker_silk.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 680
+			},
+			{
+				"itemType": "Item",
+				"id": "Celestial_Sapphire",
+				"name": "Celestial Sapphire",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/celestial_sapphire.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 680
+			},
+			{
+				"itemType": "Item",
+				"id": "Astral_Ember",
+				"name": "Astral Ember",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/astral_ember.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 680
+			},
+			{
+				"itemType": "Item",
+				"id": "Essence_Of_Serenity",
+				"name": "Essence Of Serenity",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/essence_of_serenity.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 680
+			},
+			{
+				"itemType": "Item",
+				"id": "Voidfire_Essence",
+				"name": "Voidfire Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/voidfire_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 750
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Glyphstone",
+				"name": "Ancient Glyphstone",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/ancient_glyphstone.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 750
+			},
+			{
+				"itemType": "Item",
+				"id": "Emberheart_Ruby",
+				"name": "Emberheart Ruby",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/emberheart_ruby.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 750
+			},
+			{
+				"itemType": "Item",
+				"id": "Stardust_Velvet",
+				"name": "Stardust Velvet",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/stardust_velvet.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 750
+			},
+			{
+				"itemType": "Item",
+				"id": "Arcane_Essence",
+				"name": "Arcane Essence",
+				"category": "Archaeology",
+				"type": "Archaeology Material",
+				"media": "assets/img/materials/arcane_essence.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 750
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Eye_Pendant_Damaged",
+				"name": "Hawk's Eye Pendant (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_eye_pendant_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Eye_Pendant",
+				"name": "Hawk's Eye Pendant",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_eye_pendant.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 96
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Wisdom_Scroll_Damaged",
+				"name": "Hawk's Wisdom Scroll (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_wisdom_scroll_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Wisdom_Scroll",
+				"name": "Hawk's Wisdom Scroll",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_wisdom_scroll.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 96
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Flight_Mosaic_Tile_Damaged",
+				"name": "Hawk's Flight Mosaic Tile (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_flight_mosaic_tile_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Hawks_Flight_Mosaic_Tile",
+				"name": "Hawk's Flight Mosaic Tile",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/hawks_flight_mosaic_tile.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 96
+			},
+			{
+				"itemType": "Item",
+				"id": "Shard_Of_The_Sun_Pottery_Damaged",
+				"name": "Shard of the Sun Pottery (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/shard_of_the_sun_pottery_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Shard_Of_The_Sun_Pottery",
+				"name": "Shard of the Sun Pottery",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/shard_of_the_sun_pottery.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3264
+			},
+			{
+				"itemType": "Item",
+				"id": "Relic_Craftsmans_Hammer_Damaged",
+				"name": "Relic Craftsman's Hammer (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/relic_craftsmans_hammer_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Relic_Craftsmans_Hammer",
+				"name": "Relic Craftsman's Hammer",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/relic_craftsmans_hammer.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3264
+			},
+			{
+				"itemType": "Item",
+				"id": "Lost_Masons_Chisel_Damaged",
+				"name": "Lost Mason's Chisel (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/lost_masons_chisel_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Lost_Masons_Chisel",
+				"name": "Lost Mason's Chisel",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/lost_masons_chisel.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 7920
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Timber_Relic_Damaged",
+				"name": "Ancient Timber Relic (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/ancient_timber_relic_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Timber_Relic",
+				"name": "Ancient Timber Relic",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/ancient_timber_relic.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 7920
+			},
+			{
+				"itemType": "Item",
+				"id": "Cracked_Stone_Masonry_Tablet_Damaged",
+				"name": "Cracked Stone Masonry Tablet (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/cracked_stone_masonry_tablet_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Cracked_Stone_Masonry_Tablet",
+				"name": "Cracked Stone Masonry Tablet",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/cracked_stone_masonry_tablet.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 7920
+			},
+			{
+				"itemType": "Item",
+				"id": "Librarians_Spectacles_Damaged",
+				"name": "Librarian's Spectacles (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/librarians_spectacles_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Librarians_Spectacles",
+				"name": "Librarian's Spectacles",
+				"customDescription": "It's advisable to conceal these since there's no telling who might attempt to take them.",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/librarians_spectacles.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 240
+			},
+			{
+				"itemType": "Item",
+				"id": "Mythic_Archive_Key_Damaged",
+				"name": "Mythic Archive Key (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/mythic_archive_key_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Mythic_Archive_Key",
+				"name": "Mythic Archive Key",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/mythic_archive_key.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 240
+			},
+			{
+				"itemType": "Item",
+				"id": "Scriptorium_Manuscript_Fragment_Damaged",
+				"name": "Scriptorium Manuscript Fragment (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scriptorium_manuscript_fragment_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Scriptorium_Manuscript_Fragment",
+				"name": "Scriptorium Manuscript Fragment",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scriptorium_manuscript_fragment.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 240
+			},
+			{
+				"itemType": "Item",
+				"id": "Astrolabe_Relic_Damaged",
+				"name": "Astrolabe Relic (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/astrolabe_relic_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Astrolabe_Relic",
+				"name": "Astrolabe Relic",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/astrolabe_relic.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 240
+			},
+			{
+				"itemType": "Item",
+				"id": "Sphinx_Guardian_Figurine_Damaged",
+				"name": "Sphinx Guardian Figurine (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/sphinx_guardian_figurine_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Sphinx_Guardian_Figurine",
+				"name": "Sphinx Guardian Figurine",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/sphinx_guardian_figurine.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 11760
+			},
+			{
+				"itemType": "Item",
+				"id": "Eye_Of_Horus_Relic_Damaged",
+				"name": "Eye Of Horus Relic (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/eye_of_horus_relic_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Eye_Of_Horus_Relic",
+				"name": "Eye Of Horus Relic",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/eye_of_horus_relic.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 11760
+			},
+			{
+				"itemType": "Item",
+				"id": "Anubis_Statue_Fragment_Damaged",
+				"name": "Anubis Statue Fragment (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/anubis_statue_fragment_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Anubis_Statue_Fragment",
+				"name": "Anubis Statue Fragment",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/anubis_statue_fragment.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 11760
+			},
+			{
+				"itemType": "Item",
+				"id": "Scarab_Amulet_Necklace_Damaged",
+				"name": "Scarab Amulet Necklace (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scarab_amulet_necklace_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Scarab_Amulet_Necklace",
+				"name": "Scarab Amulet Necklace",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scarab_amulet_necklace.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 11760
+			},
+			{
+				"itemType": "Item",
+				"id": "Feathered_Frieze_Fragment_Damaged",
+				"name": "Feathered Frieze Fragment (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/feathered_frieze_fragment_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Feathered_Frieze_Fragment",
+				"name": "Feathered Frieze Fragment",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/feathered_frieze_fragment.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 32640
+			},
+			{
+				"itemType": "Item",
+				"id": "Osiriss_Medallion_Damaged",
+				"name": "Osiris's Medallion (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/osiriss_medallion_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Osiriss_Medallion",
+				"name": "Osiris's Medallion",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/osiriss_medallion.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 32640
+			},
+			{
+				"itemType": "Item",
+				"id": "Dreamweavers_Locket_Damaged",
+				"name": "Dreamweaver's Locket (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dreamweavers_locket_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Dreamweavers_Locket",
+				"name": "Dreamweaver's Locket",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dreamweavers_locket.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 32640
+			},
+			{
+				"itemType": "Item",
+				"id": "Starfire_Crystal_Shard_Damaged",
+				"name": "Starfire Crystal Shard (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/starfire_crystal_shard_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Starfire_Crystal_Shard",
+				"name": "Starfire Crystal Shard",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/starfire_crystal_shard.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 32640
+			},
+			{
+				"itemType": "Item",
+				"id": "Pharaohs_Crown_Jewel_Damaged",
+				"name": "Pharaoh's Crown Jewel (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/pharaohs_crown_jewel_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Pharaohs_Crown_Jewel",
+				"name": "Pharaoh's Crown Jewel",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/pharaohs_crown_jewel.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 384
+			},
+			{
+				"itemType": "Item",
+				"id": "Scarab_Encrusted_Ankh_Damaged",
+				"name": "Scarab Encrusted Ankh (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scarab_encrusted_ankh_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Scarab_Encrusted_Ankh",
+				"name": "Scarab Encrusted Ankh",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scarab_encrusted_ankh.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 384
+			},
+			{
+				"itemType": "Item",
+				"id": "Royal_Cartouche_Ring_Damaged",
+				"name": "Royal Cartouche Ring (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/royal_cartouche_ring_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Royal_Cartouche_Ring",
+				"name": "Royal Cartouche Ring",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/royal_cartouche_ring.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 384
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Talon_Coin_Damaged",
+				"name": "Ancient Talon Coin (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/ancient_talon_coin_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Ancient_Talon_Coin",
+				"name": "Ancient Talon Coin",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/ancient_talon_coin.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 384
+			},
+			{
+				"itemType": "Item",
+				"id": "Canopic_Jar_Of_Serenity_Damaged",
+				"name": "Canopic Jar Of Serenity (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/canopic_jar_of_serenity_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Canopic_Jar_Of_Serenity",
+				"name": "Canopic Jar Of Serenity",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/canopic_jar_of_serenity.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1344
+			},
+			{
+				"itemType": "Item",
+				"id": "Osiris_Relic_Staff_Damaged",
+				"name": "Osiris Relic Staff (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/osiris_relic_staff_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Osiris_Relic_Staff",
+				"name": "Osiris Relic Staff",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/osiris_relic_staff.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1344
+			},
+			{
+				"itemType": "Item",
+				"id": "Winged_Serpent_Statue_Damaged",
+				"name": "Winged Serpent Statue (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/winged_serpent_statue_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Winged_Serpent_Statue",
+				"name": "Winged Serpent Statue",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/winged_serpent_statue.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1344
+			},
+			{
+				"itemType": "Item",
+				"id": "Amethyst_Scarab_Pendant_Damaged",
+				"name": "Amethyst Scarab Pendant (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/amethyst_scarab_pendant_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Amethyst_Scarab_Pendant",
+				"name": "Amethyst Scarab Pendant",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/amethyst_scarab_pendant.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1344
+			},
+			{
+				"itemType": "Item",
+				"id": "Cursed_Shadow_Amulet_Damaged",
+				"name": "Cursed Shadow Amulet (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/cursed_shadow_amulet_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Cursed_Shadow_Amulet",
+				"name": "Cursed Shadow Amulet",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/cursed_shadow_amulet.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3840
+			},
+			{
+				"itemType": "Item",
+				"id": "Whispering_Ethereal_Orb_Damaged",
+				"name": "Whispering Ethereal Orb (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/whispering_ethereal_orb_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Whispering_Ethereal_Orb",
+				"name": "Whispering Ethereal Orb",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/whispering_ethereal_orb.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3840
+			},
+			{
+				"itemType": "Item",
+				"id": "Shadowmancers_Amulet_Damaged",
+				"name": "Shadowmancer's Amulet (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/shadowmancers_amulet_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Shadowmancers_Amulet",
+				"name": "Shadowmancer's Amulet",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/shadowmancers_amulet.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3840
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragonfire_Amulet_Damaged",
+				"name": "Dragonfire Amulet (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragonfire_amulet_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragonfire_Amulet",
+				"name": "Dragonfire Amulet",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragonfire_amulet.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 672
+			},
+			{
+				"itemType": "Item",
+				"id": "Winged_Talon_Necklace_Damaged",
+				"name": "Winged Talon Necklace (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/winged_talon_necklace_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Winged_Talon_Necklace",
+				"name": "Winged Talon Necklace",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/winged_talon_necklace.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 672
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragonbone_Relic_Damaged",
+				"name": "Dragonbone Relic (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragonbone_relic_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragonbone_Relic",
+				"name": "Dragonbone Relic",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragonbone_relic.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 672
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragons_Eye_Gemstone_Damaged",
+				"name": "Dragon's Eye Gemstone (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragons_eye_gemstone_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Dragons_Eye_Gemstone",
+				"name": "Dragon's Eye Gemstone",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/dragons_eye_gemstone.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 29760
+			},
+			{
+				"itemType": "Item",
+				"id": "Scaled_Guardian_Idol_Damaged",
+				"name": "Scaled Guardian Idol (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scaled_guardian_idol_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Scaled_Guardian_Idol",
+				"name": "Scaled Guardian Idol",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/scaled_guardian_idol.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 29760
+			},
+			{
+				"itemType": "Item",
+				"id": "Draconic_Crest_Damaged",
+				"name": "Draconic Crest (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/draconic_crest_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Draconic_Crest",
+				"name": "Draconic Crest",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/draconic_crest.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 29760
+			},
+			{
+				"itemType": "Item",
+				"id": "Wyvernfang_Blades_Damaged",
+				"name": "Wyvernfang Blades (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/wyvernfang_blades_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Wyvernfang_Blades",
+				"name": "Wyvernfang Blades",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/wyvernfang_blades.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 36000
+			},
+			{
+				"itemType": "Item",
+				"id": "Drakesong_Lyre_Damaged",
+				"name": "Drakesong Lyre (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/drakesong_lyre_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Drakesong_Lyre",
+				"name": "Drakesong Lyre",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/drakesong_lyre.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 36000
+			},
+			{
+				"itemType": "Item",
+				"id": "Wyrmheart_Pendant_Damaged",
+				"name": "Wyrmheart Pendant (Damaged)",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/wyrmheart_pendant_damaged.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 0
+			},
+			{
+				"itemType": "Item",
+				"id": "Wyrmheart_Pendant",
+				"name": "Wyrmheart Pendant",
+				"category": "Archaeology",
+				"type": "Archaeology Artefact",
+				"media": "assets/img/artefacts/wyrmheart_pendant.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 36000
+			},
+			{
+				"id": "Archaeology_Potion_I",
+				"name": "Archaeology Potion I",
+				"customDescription": "+4% Chance to find an Artefact.",
+				"category": "Herblore",
+				"type": "Potion",
+				"media": "assets/img/potions/archaeology_potion_i.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2,
+				"itemType": "Potion",
+				"modifiers": {},
+				"charges": 20,
+				"tier": 0,
+				"action": "archaeology_skill:Archaeology",
+				"consumesOn": [
+					{
+						"type": "ArchaeologyExcavationAction"
+					}
+				]
+			},
+			{
+				"id": "Archaeology_Potion_II",
+				"name": "Archaeology Potion II",
+				"customDescription": "+6% Chance to find an Artefact.",
+				"category": "Herblore",
+				"type": "Potion",
+				"media": "assets/img/potions/archaeology_potion_ii.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 3,
+				"itemType": "Potion",
+				"modifiers": {},
+				"charges": 20,
+				"tier": 1,
+				"action": "archaeology_skill:Archaeology",
+				"consumesOn": [
+					{
+						"type": "PlayerAttack"
+					}
+				]
+			},
+			{
+				"id": "Archaeology_Potion_III",
+				"name": "Archaeology Potion III",
+				"customDescription": "+8% Chance to find an Artefact.",
+				"category": "Herblore",
+				"type": "Potion",
+				"media": "assets/img/potions/archaeology_potion_iii.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 4,
+				"itemType": "Potion",
+				"modifiers": {},
+				"charges": 20,
+				"tier": 2,
+				"action": "archaeology_skill:Archaeology",
+				"consumesOn": [
+					{
+						"type": "PlayerAttack"
+					}
+				]
+			},
+			{
+				"id": "Archaeology_Potion_IV",
+				"name": "Archaeology Potion IV",
+				"customDescription": "+10% Chance to find an Artefact.",
+				"category": "Herblore",
+				"type": "Potion",
+				"media": "assets/img/potions/archaeology_potion_iv.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 5,
+				"itemType": "Potion",
+				"modifiers": {},
+				"charges": 30,
+				"tier": 3,
+				"action": "archaeology_skill:Archaeology",
+				"consumesOn": [
+					{
+						"type": "PlayerAttack"
+					}
+				]
+			},
+			{
+				"id": "Mastery_Token_Archaeology",
+				"name": "Mastery Token (Archaeology)",
+				"category": "Mastery",
+				"type": "Token",
+				"media": "assets/img/tokens/mastery_token_archaeology.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1500,
+				"itemType": "Token",
+				"modifiers": {
+					"masteryToken": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 0.1
+						}
+					]
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Archaeology_Skillcape",
+				"name": "Archaeology Skillcape",
+				"customDescription": "-50% Archaeology Workbench interval",
+				"category": "Combat",
+				"type": "Armour",
+				"media": "assets/img/capes/archaeology_skillcape.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 250000,
+				"tier": "Skillcape",
+				"validSlots": [
+					"Cape"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 99
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "meleeDefenceBonus",
+						"value": 9
+					},
+					{
+						"key": "rangedDefenceBonus",
+						"value": 9
+					},
+					{
+						"key": "magicDefenceBonus",
+						"value": 9
+					}
+				],
+				"modifiers": {
+					"decreasedSkillIntervalPercent": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 15
+						}
+					]
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Mummys_Shroud",
+				"name": "Mummy's Shroud",
+				"category": "Combat",
+				"type": "Cape",
+				"media": "assets/img/capes/mummys_shroud.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 175000,
+				"tier": "none",
+				"validSlots": [
+					"Cape"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Defence",
+						"level": 60
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "meleeDefenceBonus",
+						"value": 7
+					},
+					{
+						"key": "rangedDefenceBonus",
+						"value": 7
+					},
+					{
+						"key": "magicDefenceBonus",
+						"value": -10
+					}
+				],
+				"modifiers": {
+					"increasedGlobalEvasion": 10
+				},
+				"enemyModifiers": {
+					"decreasedGlobalEvasion": 10
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Sands_Of_Time",
+				"name": "Sands Of Time",
+				"category": "Combat",
+				"type": "Magic Book",
+				"media": "assets/img/shields/sands_of_time.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 280000,
+				"tier": "book",
+				"validSlots": [
+					"Shield"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Magic",
+						"level": 70
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "meleeDefenceBonus",
+						"value": 15
+					},
+					{
+						"key": "rangedDefenceBonus",
+						"value": 15
+					},
+					{
+						"key": "magicDefenceBonus",
+						"value": 15
+					}
+				],
+				"modifiers": {
+					"decreasedAttackInterval": 350,
+					"decreasedMonsterRespawnTimer": 250
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Key_Of_Life",
+				"name": "Key Of Life",
+				"category": "Combat",
+				"type": "Amulet",
+				"media": "assets/img/amulets/key_of_life.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 320000,
+				"tier": "Special",
+				"validSlots": [
+					"Amulet"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Defence",
+						"level": 70
+					}
+				],
+				"equipmentStats": [
+					{
+						"key": "meleeDefenceBonus",
+						"value": 12
+					},
+					{
+						"key": "rangedDefenceBonus",
+						"value": 12
+					},
+					{
+						"key": "magicDefenceBonus",
+						"value": 12
+					}
+				],
+				"modifiers": {
+					"increasedLifesteal": 50,
+					"increasedBleedLifesteal": 50
+				}
+			},
+			{
+				"id": "Eternal_Chest",
+				"name": "Eternal Chest",
+				"category": "Dungeons",
+				"type": "Chest",
+				"media": "assets/img/chests/eternal_chest.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 1250,
+				"itemType": "Openable",
+				"dropTable": [
+					{
+						"itemID": "archaeology_skill:Ancient_Dust",
+						"minQuantity": 50,
+						"maxQuantity": 120,
+						"weight": 250
+					},
+					{
+						"itemID": "archaeology_skill:Mummys_Shroud",
+						"minQuantity": 1,
+						"maxQuantity": 1,
+						"weight": 25
+					},
+					{
+						"itemID": "archaeology_skill:Sands_Of_Time",
+						"minQuantity": 1,
+						"maxQuantity": 1,
+						"weight": 1
+					},
+					{
+						"itemID": "archaeology_skill:Key_Of_Life",
+						"minQuantity": 1,
+						"maxQuantity": 1,
+						"weight": 1
+					}
+				]
+			}
+		],
+		"pets": [
+			{
+				"id": "Digger",
+				"name": "Digger",
+				"langHint": {
+					"category": "MENU_TEXT",
+					"id": "PET_DIGGER"
+				},
+				"media": "assets/img/pets/digger.png",
+				"ignoreCompletion": false,
+				"modifiers": {},
+				"activeInRaid": false,
+				"scaleChanceWithMasteryPool": false,
+				"skillID": "archaeology_skill:Archaeology"
+			},
+			{
+				"id": "Sphinxie",
+				"name": "Sphinxie",
+				"media": "assets/img/pets/sphinxie.png",
+				"ignoreCompletion": false,
+				"modifiers": {
+					"increasedGPFromMonsters": 15,
+					"increasedGPFromMonstersFlat": 100
+				},
+				"activeInRaid": false,
+				"scaleChanceWithMasteryPool": false,
+				"langHint": {
+					"category": "DUNGEON",
+					"id": "NAME_Crypt_Of_The_Eternal_Pharaoh"
+				  }
+			}
+		],
+		"itemUpgrades": [
+			{
+				"upgradedItemID": "archaeology_skill:Archaeology_Potion_II",
+				"gpCost": 0,
+				"scCost": 0,
+				"itemCosts": [
+					{
+						"id": "archaeology_skill:Archaeology_Potion_I",
+						"quantity": 3
+					}
+				],
+				"rootItemIDs": [
+					"archaeology_skill:Archaeology_Potion_I"
+				],
+				"isDowngrade": false
+			},
+			{
+				"upgradedItemID": "archaeology_skill:Archaeology_Potion_III",
+				"gpCost": 0,
+				"scCost": 0,
+				"itemCosts": [
+					{
+						"id": "archaeology_skill:Archaeology_Potion_II",
+						"quantity": 3
+					}
+				],
+				"rootItemIDs": [
+					"archaeology_skill:Archaeology_Potion_II"
+				],
+				"isDowngrade": false
+			},
+			{
+				"upgradedItemID": "archaeology_skill:Archaeology_Potion_IV",
+				"gpCost": 0,
+				"scCost": 0,
+				"itemCosts": [
+					{
+						"id": "archaeology_skill:Archaeology_Potion_III",
+						"quantity": 3
+					}
+				],
+				"rootItemIDs": [
+					"archaeology_skill:Archaeology_Potion_III"
+				],
+				"isDowngrade": false
+			}
+		],
+		"attacks": [
+			{
+				"id": "Quicksand_Quake",
+				"name": "Quicksand Quake",
+				"description": "An avoidable attack that deals ${attackDamageMaxValue0}x${hitCount} damage over ${duration}s.",
+				"descriptionGenerator": "An avoidable attack that deals <damage>x<count> damage over <duration>.",
+				"defaultChance": 40,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 10,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": false,
+				"attackCount": 15,
+				"attackInterval": 150,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Sandblast",
+				"name": "Sandblast",
+				"description": "An unavoidable attack deals ${attackDamageMaxValue0}% damage.",
+				"descriptionGenerator": "An unavoidable attack for <damage>.",
+				"defaultChance": 35,
+				"damage": [
+					{
+						"damageType": "Normal",
+						"amplitude": 250
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": true,
+				"attackCount": 1,
+				"attackInterval": 50,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Shadow_Sandstorm",
+				"name": "Shadow Sandstorm",
+				"description": "An avoidable attack that deals ${attackDamageMaxValue0}x${hitCount} damage over ${duration}s.",
+				"descriptionGenerator": "An avoidable attack that deals <damage>x<count> damage over <duration>.",
+				"defaultChance": 25,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 16,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": false,
+				"attackCount": 10,
+				"attackInterval": 150,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Explosive_Barrage",
+				"name": "Explosive Barrage",
+				"description": "An avoidable attack that deals ${attackDamageMaxValue0}x${hitCount} damage over ${duration}s.",
+				"descriptionGenerator": "An avoidable attack that deals <damage>x<count> damage over <duration>.",
+				"defaultChance": 30,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 25,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": false,
+				"attackCount": 3,
+				"attackInterval": 200,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Blightfire",
+				"name": "Blightfire",
+				"description": "Attack once dealing ${attackDamageMaxValue0} damage (Can miss). On a hit, has a ${onHitEffect0chance}% chance to inflict Burn that deals ${onHitEffect0DamageMaxValue0}% of the enemy's current hitpoints as damage over ${onHitEffect0duration}s.",
+				"descriptionGenerator": "Attack once dealing <damage> damage (Can Miss). On a hit, <hitEffect>.",
+				"defaultChance": 30,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 30,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [
+					{
+						"effectType": "Burn",
+						"chance": 60
+					}
+				],
+				"cantMiss": false,
+				"attackCount": 1,
+				"attackInterval": 50,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Crushing_Double_Jab",
+				"name": "Crushing Double Jab",
+				"description": "Perform 2 attacks that deal ${attackDamageMaxValue0}% of your normal damage on the 1st attack and ${attackDamageMaxValue1}% of your normal damage on the 2nd attack.",
+				"descriptionGenerator": "Perform 2 attacks that deal <damage>.",
+				"defaultChance": 20,
+				"damage": [
+					{
+						"damageType": "Normal",
+						"amplitude": 50,
+						"attackCount": 0
+					},
+					{
+						"damageType": "Normal",
+						"amplitude": 100,
+						"attackCount": 1
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": false,
+				"attackCount": 2,
+				"attackInterval": 300,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Divine_Blast",
+				"name": "Divine Blast",
+				"description": "An unavoidable attack deals ${attackDamageMaxValue0}% damage.",
+				"descriptionGenerator": "An unavoidable attack for <damage>.",
+				"defaultChance": 40,
+				"damage": [
+					{
+						"damageType": "Normal",
+						"amplitude": 50,
+						"attackCount": 0
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": false,
+				"attackCount": 1,
+				"attackInterval": 300,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Ankh_Life_Drain",
+				"name": "Ankh Life Drain",
+				"description": "Fire an unavoidable attack that deals ${attackDamageMaxValue0} damage. The enemy is healed for ${lifesteal}% of damage dealt.",
+				"descriptionGenerator": "Fire an unavoidable attack that deals <damage> damage. <Attacker> <attis> healed for <lifesteal> of damage dealt.",
+				"defaultChance": 15,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 29,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [],
+				"cantMiss": true,
+				"attackCount": 1,
+				"attackInterval": 50,
+				"lifesteal": 100,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Eternal_Wrath",
+				"name": "Eternal Wrath",
+				"description": "The enemy casts a Eternal Wrath on you that applies 1 stacks of wrath if it hits you (Avoidable).",
+				"descriptionGenerator": "The enemy casts a Eternal Wrath on you that applies 1 stacks of wrath if it hits <target> (Avoidable).",
+				"defaultChance": 20,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"roll": false,
+						"maxRoll": "Fixed",
+						"maxPercent": 0
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [
+					{
+						"effectType": "Custom",
+						"type": "Modifier",
+						"modifiers": {
+							"decreasedDamageReduction": "1"
+						},
+						"maxStacks": 5,
+						"stacksToAdd": 1,
+						"turns": "Infinity",
+						"character": "Target",
+						"countsOn": "Target",
+						"media": "assets/media/status/evasion_decrease.svg"
+					}
+				],
+				"cantMiss": false,
+				"attackCount": 1,
+				"attackInterval": 50,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			},
+			{
+				"id": "Pharaohs_Judgement",
+				"name": "Pharaohs Judgement",
+				"description": "An avoidable attack that deals ${attackDamageMaxValue0} damage. On a hit, applies global evasion for ${onHitEffect0turns} turn.",
+				"descriptionGenerator": "An avoidable attack that deals <damage> damage. On a hit, <hitEffect>.",
+				"defaultChance": 25,
+				"damage": [
+					{
+						"damageType": "Custom",
+						"character": "Attacker",
+						"maxRoll": "Fixed",
+						"maxPercent": 31,
+						"roll": false
+					}
+				],
+				"prehitEffects": [],
+				"onhitEffects": [
+					{
+						"effectType": "Custom",
+						"type": "Modifier",
+						"modifiers": {
+							"decreasedGlobalEvasion": "10"
+						},
+						"maxStacks": 1,
+						"stacksToAdd": 1,
+						"turns": 2,
+						"character": "Target",
+						"countsOn": "Target",
+						"media": "assets/media/status/evasion_decrease.svg"
+					}
+				],
+				"cantMiss": false,
+				"attackCount": 1,
+				"attackInterval": 300,
+				"lifesteal": 0,
+				"usesRunesPerProc": false
+			}
+		],
+		"monsters": [
+			{
+				"id": "Sandworm",
+				"name": "Sandworm",
+				"media": "assets/img/combat/monsters/sandworm.png",
+				"levels": {
+					"Hitpoints": 60,
+					"Attack": 70,
+					"Strength": 70,
+					"Defence": 120,
+					"Ranged": 60,
+					"Magic": 60
+				},
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 3000
+					},
+					{
+						"key": "damageReduction",
+						"value": 15
+					},
+					{
+						"key": "meleeStrengthBonus",
+						"value": 55
+					},
+					{
+						"key": "meleeDefenceBonus",
+						"value": 55
+					}
+				],
+				"ignoreCompletion": false,
+				"attackType": "melee",
+				"specialAttacks": [
+					"archaeology_skill:Quicksand_Quake"
+				],
+				"passives": [],
+				"lootChance": 100,
+				"lootTable": [],
+				"gpDrops": {
+					"min": 15,
+					"max": 50
+				},
+				"canSlayer": false,
+				"isBoss": false,
+				"selectedSpell": "melvorD:WindStrike",
+				"bones": {
+					"itemID": "archaeology_skill:Ancient_Dust",
+					"quantity": 1
+				}
+			},
+			{
+				"id": "Sand_Wraith",
+				"name": "Sand Wraith",
+				"media": "assets/img/combat/monsters/sand_wraith.png",
+				"levels": {
+					"Hitpoints": 80,
+					"Attack": 75,
+					"Strength": 75,
+					"Defence": 140,
+					"Ranged": 75,
+					"Magic": 120
+				},
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 2800
+					},
+					{
+						"key": "damageReduction",
+						"value": 15
+					},
+					{
+						"key": "magicDamageBonus",
+						"value": -20
+					}
+				],
+				"ignoreCompletion": false,
+				"attackType": "magic",
+				"specialAttacks": [
+					"archaeology_skill:Sandblast",
+					"archaeology_skill:Shadow_Sandstorm"
+				],
+				"passives": [],
+				"lootChance": 100,
+				"lootTable": [],
+				"gpDrops": {
+					"min": 15,
+					"max": 50
+				},
+				"canSlayer": false,
+				"isBoss": false,
+				"selectedSpell": "melvorD:WindStrike",
+				"bones": {
+					"itemID": "archaeology_skill:Ancient_Dust",
+					"quantity": 1
+				}
+			},
+			{
+				"id": "Corrupted_Archaeologist",
+				"name": "Corrupted Archaeologist",
+				"media": "assets/img/combat/monsters/corrupted_archaeologist.png",
+				"levels": {
+					"Hitpoints": 170,
+					"Attack": 10,
+					"Strength": 10,
+					"Defence": 300,
+					"Ranged": 10,
+					"Magic": 290
+				},
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 2800
+					},
+					{
+						"key": "damageReduction",
+						"value": 15
+					},
+					{
+						"key": "magicAttackBonus",
+						"value": -10
+					},
+					{
+						"key": "meleeStrengthBonus",
+						"value": 5
+					},
+					{
+						"key": "meleeDefenceBonus",
+						"value": 13
+					},
+					{
+						"key": "rangedDefenceBonus",
+						"value": -15
+					}
+				],
+				"ignoreCompletion": false,
+				"attackType": "magic",
+				"specialAttacks": [
+					"archaeology_skill:Explosive_Barrage",
+					"archaeology_skill:Blightfire"
+				],
+				"passives": [],
+				"lootChance": 100,
+				"lootTable": [],
+				"gpDrops": {
+					"min": 50,
+					"max": 80
+				},
+				"canSlayer": false,
+				"isBoss": false,
+				"selectedSpell": "melvorD:WindStrike",
+				"bones": {
+					"itemID": "archaeology_skill:Ancient_Dust",
+					"quantity": 1
+				}
+			},
+			{
+				"id": "Tomb_Guardian",
+				"name": "Tomb Guardian",
+				"media": "assets/img/combat/monsters/tomb_guardian.png",
+				"levels": {
+					"Hitpoints": 180,
+					"Attack": 240,
+					"Strength": 230,
+					"Defence": 220,
+					"Ranged": 10,
+					"Magic": 50
+				},
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 3000
+					},
+					{
+						"key": "damageReduction",
+						"value": 10
+					},
+					{
+						"key": "meleeStrengthBonus",
+						"value": 5
+					},
+					{
+						"key": "meleeDefenceBonus",
+						"value": 15
+					}
+				],
+				"ignoreCompletion": false,
+				"attackType": "melee",
+				"specialAttacks": [
+					"archaeology_skill:Crushing_Double_Jab"
+				],
+				"passives": [],
+				"lootChance": 100,
+				"lootTable": [],
+				"gpDrops": {
+					"min": 60,
+					"max": 100
+				},
+				"canSlayer": false,
+				"isBoss": false,
+				"selectedSpell": "melvorD:WindStrike",
+				"bones": {
+					"itemID": "archaeology_skill:Ancient_Dust",
+					"quantity": 1
+				}
+			},
+			{
+				"id": "King_Amenhotep_The_Eternal",
+				"name": "King Amenhotep The Eternal",
+				"media": "assets/img/combat/monsters/king_amunhotep_the_eternal.png",
+				"levels": {
+					"Hitpoints": 230,
+					"Attack": 140,
+					"Strength": 140,
+					"Defence": 140,
+					"Ranged": 140,
+					"Magic": 310
+				},
+				"equipmentStats": [
+					{
+						"key": "attackSpeed",
+						"value": 3000
+					},
+					{
+						"key": "damageReduction",
+						"value": 20
+					},
+					{
+						"key": "magicAttackBonus",
+						"value": 60
+					},
+					{
+						"key": "magicDefenceBonus",
+						"value": 120
+					}
+				],
+				"ignoreCompletion": false,
+				"attackType": "magic",
+				"specialAttacks": [
+					"archaeology_skill:Divine_Blast",
+					"archaeology_skill:Eternal_Wrath",
+					"archaeology_skill:Ankh_Life_Drain",
+					"archaeology_skill:Pharaohs_Judgement"
+				],
+				"passives": [],
+				"lootChance": 100,
+				"lootTable": [
+					{
+						"itemID": "archaeology_skill:Eternal_Chest",
+						"minQuantity": 1,
+						"maxQuantity": 1,
+						"weight": 1
+					}
+				],
+				"gpDrops": {
+					"min": 500,
+					"max": 4500
+				},
+				"canSlayer": false,
+				"isBoss": true,
+				"selectedSpell": "melvorD:EarthWave",
+				"bones": {
+					"itemID": "archaeology_skill:Ancient_Dust",
+					"quantity": 1
+				}
+			}
+		],
+		"dungeons": [
+			{
+				"id": "Crypt_Of_The_Eternal_Pharaoh",
+				"name": "Crypt of the Eternal Pharaoh",
+				"media": "assets/img/combat/dungeons/crypt_of_the_eternal_pharaoh.png",
+				"monsterIDs": [
+					"archaeology_skill:Sandworm",
+					"archaeology_skill:Sandworm",
+					"archaeology_skill:Sandworm",
+					"archaeology_skill:Sand_Wraith",
+					"archaeology_skill:Sand_Wraith",
+					"archaeology_skill:Sand_Wraith",
+					"archaeology_skill:Corrupted_Archaeologist",
+					"archaeology_skill:Corrupted_Archaeologist",
+					"archaeology_skill:Corrupted_Archaeologist",
+					"archaeology_skill:Tomb_Guardian",
+					"archaeology_skill:Tomb_Guardian",
+					"archaeology_skill:King_Amenhotep_The_Eternal"
+				],
+				"difficulty": [
+					4
+				],
+				"entryRequirements": [],
+				"rewardItemIDs": [
+					"archaeology_skill:Eternal_Chest"
+				],
+				"dropBones": false,
+				"pet": {
+					"petID": "archaeology_skill:Sphinxie",
+					"weight": 150
+				},
+				"fixedPetClears": false,
+				"pauseOnBosses": false,
+				"oneTimeRewardID": "archaeology_skill:Tome_Of_Undying_Pharaohs",
+				"floors": [
+					6,
+					5,
+					1
+				]
+			}
+		],
+		"dungeonDisplayOrder": [
+			{
+				"insertAt": "After",
+				"afterID": "melvorF:Dragons_Den",
+				"ids": [
+					"archaeology_skill:Crypt_Of_The_Eternal_Pharaoh"
+				]
+			}
+		],
+		"shopPurchases": [
+			{
+				"id": "Archaeology_Skillcape",
+				"media": "assets/img/capes/archaeology_skillcape.png",
+				"category": "melvorD:Skillcapes",
+				"contains": {
+					"items": [
+						{
+							"id": "archaeology_skill:Archaeology_Skillcape",
+							"quantity": 1
+						}
+					]
+				},
+				"cost": {
+					"gp": {
+						"type": "Fixed",
+						"cost": 1000000
+					},
+					"slayerCoins": {
+						"type": "Fixed",
+						"cost": 0
+					},
+					"items": [],
+					"raidCoins": {
+						"type": "Fixed",
+						"cost": 0
+					}
+				},
+				"allowQuantityPurchase": false,
+				"unlockRequirements": [],
+				"purchaseRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "archaeology_skill:Archaeology",
+						"level": 99
+					}
+				],
+				"defaultBuyLimit": 1,
+				"buyLimitOverrides": [],
+				"showBuyLimit": false
+			}	
+		],
+		"shopDisplayOrder": [
+			{
+				"insertAt": "After",
+				"afterID": "melvorF:Agility_Skillcape",
+				"ids": [
+					"archaeology_skill:Archaeology_Skillcape"
+				]
+			}
+		],
+		"lore": [
+			{
+				"id": "Archaeology_New_Joiner",
+				"title": "Archaeology - New Joiner",
+				"media": "assets/img/books/archaeology_new_joiner.png",
+				"unlockRequirements": []
+			},
+			{
+				"id": "Tome_Of_Undying_Pharaohs",
+				"title": "Tome Of Undying Pharaohs",
+				"media": "assets/img/books/tome_of_undying_pharaohs.png",
+				"unlockRequirements": [
+					{
+						"type": "DungeonCompletion",
+						"dungeonID": "archaeology_skill:Crypt_Of_The_Eternal_Pharaoh",
+						"count": 1
+					}
+				]
+			}
+		],
+		"skillData": [
+			{
+				"skillID": "archaeology_skill:Archaeology",
+				"data": {
+					"obeliskImage": "assets/img/arcanum_obelisk/obelisk.png",
+					"relicPointImage": "assets/img/arcanum_obelisk/relic_point.png",
+					"pets": [
+						"archaeology_skill:Digger",
+						"melvorD:Ty"
+					],
+					"categories": [
+						{
+							"id": "Dig_Sites",
+							"media": "assets/img/category_icons/dig_sites.png",
+							"name": "Dig Sites"
+						},
+						{
+							"id": "Workbench",
+							"media": "assets/img/category_icons/workbench.png",
+							"name": "Workbench"
+						},
+						{
+							"id": "Collection",
+							"media": "assets/img/category_icons/collection.png",
+							"name": "Collection"
+						},
+						{
+							"id": "Arcanum_Obelisk",
+							"media": "assets/img/category_icons/arcanum_obelisk.png",
+							"name": "Arcanum Obelisk"
+						}
+					],
+					"rareDrops": [
+						{
+							"itemID": "melvorD:Gold_Topaz_Ring",
+							"altItemID": "melvorD:Signet_Ring_Half_A",
+							"quantity": 1,
+							"requirements": [],
+							"chance": {
+								"type": "LevelScaling",
+								"maxChance": 100,
+								"baseChance": 0,
+								"scalingFactor": 0.000006060606060606061
+							}
+						}
+					],
+					"minibar": {
+						"defaultItems": [
+							"archaeology_skill:Archaeology_Skillcape"
+						],
+						"upgrades": [],
+						"pets": [
+							"archaeology_skill:Digger"
+						]
+					},
+					"masteryTokenID": "archaeology_skill:Mastery_Token_Archaeology",
+					"masteryLevelUnlocks": [
+						{
+							"level": 10,
+							"descriptionID": 0,
+							"description": "Decreases the chance to fail excavations by 5%."
+						},
+						{
+							"level": 20,
+							"descriptionID": 1,
+							"description": "Decreases the chance to fail excavations by 10%."
+						},
+						{
+							"level": 30,
+							"descriptionID": 2,
+							"description": "Decreases the chance to fail excavations by 15%."
+						},
+						{
+							"level": 40,
+							"descriptionID": 3,
+							"description": "Decreases the chance to fail excavations by 20%."
+						},
+						{
+							"level": 50,
+							"descriptionID": 4,
+							"description": "Decreases the chance to fail excavations by 25%."
+						},
+						{
+							"level": 60,
+							"descriptionID": 5,
+							"description": "Decreases the chance to fail excavations by 30%."
+						},
+						{
+							"level": 70,
+							"descriptionID": 6,
+							"description": "Decreases the chance to fail excavations by 35%."
+						},{
+							"level": 80,
+							"descriptionID": 7,
+							"description": "Decreases the chance to fail excavations by 40%."
+						},
+						{
+							"level": 90,
+							"descriptionID": 8,
+							"description": "Decreases the chance to fail excavations by 45%."
+						},
+						{
+							"level": 99,
+							"descriptionID": 9,
+							"description": "Decreases the chance to fail excavations by 50%."
+						}
+					],
+					"excavationHotspots": [
+						{
+							"id": "Royal_Nest_Remnants",
+							"name": "Royal Nest Remnants",
+							"media": "assets/img/dig_sites/1rnr.png",
+							"level": 1,
+							"hitpoints": 50,
+							"baseExperienceSuccess": 5,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 40,
+							"baseMinInterval": 4000,
+							"baseMaxInterval": 8000,
+							"soil": "archaeology_skill:Glimmering_Azure_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Crystalized_Amethyst",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Elderwood_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Seraphic_Silver",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Celestial_Jade",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Hawks_Eye_Pendant_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Hawks_Wisdom_Scroll_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Hawks_Flight_Mosaic_Tile_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Shardscattered_Potsherds_Debris",
+							"name": "Shardscattered Potsherds Debris",
+							"media": "assets/img/dig_sites/1spd.png",
+							"level": 40,
+							"hitpoints": 60,
+							"baseExperienceSuccess": 50,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 250,
+							"baseMinInterval": 4000,
+							"baseMaxInterval": 11000,
+							"soil": "archaeology_skill:Glimmering_Azure_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Celestial_Opal",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Astral_Shards",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Essence_Of_The_Ancients",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Emberglow_Amber",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Shard_Of_The_Sun_Pottery_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Relic_Craftsmans_Hammer_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Rotted_Beam_Remnants",
+							"name": "Rotted Beam Remnants",
+							"media": "assets/img/dig_sites/1rbr.png",
+							"level": 60,
+							"hitpoints": 65,
+							"baseExperienceSuccess": 120,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 300,
+							"baseMinInterval": 5000,
+							"baseMaxInterval": 12000,
+							"soil": "archaeology_skill:Glimmering_Azure_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Essence_Of_The_Abyss",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Prismatic_Crystalite",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Phoenix_Feather",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Astral_Steel",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Lost_Masons_Chisel_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ancient_Timber_Relic_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Cracked_Stone_Masonry_Tablet_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Luxors_Library_Remnants",
+							"name": "Luxor's Library Remnants",
+							"media": "assets/img/dig_sites/2llr.png",
+							"level": 5,
+							"hitpoints": 50,
+							"baseExperienceSuccess": 10,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 75,
+							"baseMinInterval": 4000,
+							"baseMaxInterval": 8000,
+							"soil": "archaeology_skill:Golden_Sunstone_Sand",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Arcane_Quartz",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Lunar_Silk",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Primordial_Adamant",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Voidroot_Vine",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Librarians_Spectacles_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Mythic_Archive_Key_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Scriptorium_Manuscript_Fragment_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Astrolabe_Relic_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Anubiss_Archive_Remains",
+							"name": "Anubis's Archive Remains",
+							"media": "assets/img/dig_sites/2aar.png",
+							"level": 70,
+							"hitpoints": 70,
+							"baseExperienceSuccess": 150,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 315,
+							"baseMinInterval": 6000,
+							"baseMaxInterval": 12000,
+							"soil": "archaeology_skill:Golden_Sunstone_Sand",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Stormblossom_Petals",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ethereal_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Shadowglass_Shard",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Radiant_Starstone",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Sphinx_Guardian_Figurine_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Eye_Of_Horus_Relic_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Anubis_Statue_Fragment_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Scarab_Amulet_Necklace_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Sphinxs_Secret_Pits",
+							"name": "Sphinx's Secret Pits",
+							"media": "assets/img/dig_sites/2ssp.png",
+							"level": 90,
+							"hitpoints": 75,
+							"baseExperienceSuccess": 430,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 450,
+							"baseMinInterval": 7000,
+							"baseMaxInterval": 14000,
+							"soil": "archaeology_skill:Golden_Sunstone_Sand",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Dreamwalker_Silk",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Celestial_Sapphire",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Astral_Ember",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Essence_Of_Serenity",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Feathered_Frieze_Fragment_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Osiriss_Medallion_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Dreamweavers_Locket_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Starfire_Crystal_Shard_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Sacred_Necropolis_Remains",
+							"name": "Sacred Necropolis Remains",
+							"media": "assets/img/dig_sites/3snr.png",
+							"level": 10,
+							"hitpoints": 55,
+							"baseExperienceSuccess": 15,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 135,
+							"baseMinInterval": 4000,
+							"baseMaxInterval": 8000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Astral_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Stormforged_Iron",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ethereal_Pearl",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Shadowsteel_Alloy",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Pharaohs_Crown_Jewel_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Scarab_Encrusted_Ankh_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Royal_Cartouche_Ring_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ancient_Talon_Coin_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Lost_Pharaohs_Remains",
+							"name": "Lost Pharaoh's Remains",
+							"media": "assets/img/dig_sites/3lpr.png",
+							"level": 30,
+							"hitpoints": 60,
+							"baseExperienceSuccess": 25,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 200,
+							"baseMinInterval": 3000,
+							"baseMaxInterval": 10000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Ancient_Rune_Fabric",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Voidheart_Ruby",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ashen_Emberstone",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Dreamweaver_Silk",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Canopic_Jar_Of_Serenity_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Osiris_Relic_Staff_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Winged_Serpent_Statue_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Amethyst_Scarab_Pendant_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Shadows_Chamber_Remnants",
+							"name": "Shadows Chamber Remnants",
+							"media": "assets/img/dig_sites/3scr.png",
+							"level": 50,
+							"hitpoints": 65,
+							"baseExperienceSuccess": 100,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 275,
+							"baseMinInterval": 5000,
+							"baseMaxInterval": 12000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Voidborne_Leather",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Arcanite_Residue",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Celestial_Topaz",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Thunderheart_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Cursed_Shadow_Amulet_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Whispering_Ethereal_Orb_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Shadowmancers_Amulet_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Dragons_Rest_Mounds",
+							"name": "Dragon's Rest Mounds",
+							"media": "assets/img/dig_sites/4drm.png",
+							"level": 20,
+							"hitpoints": 55,
+							"baseExperienceSuccess": 20,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 170,
+							"baseMinInterval": 3000,
+							"baseMaxInterval": 10000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Enigmatic_Obsidian",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Celestial_Feather",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Essence_Of_Radiance",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Voidfire_Crystal",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Dragonfire_Amulet_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Winged_Talon_Necklace_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Dragonbone_Relic_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Dragonfire_Crypts",
+							"name": "Dragonfire Crypts",
+							"media": "assets/img/dig_sites/4dc.png",
+							"level": 80,
+							"hitpoints": 70,
+							"baseExperienceSuccess": 325,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 390,
+							"baseMinInterval": 6000,
+							"baseMaxInterval": 13000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Voidweave_Silk",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Arcane_Ebonwood",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Lunar_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Primordial_Scale",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Dragons_Eye_Gemstone_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Scaled_Guardian_Idol_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Draconic_Crest_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						},
+						{
+							"id": "Scalebound_Burial_Grounds",
+							"name": "Scalebound Burial Grounds",
+							"media": "assets/img/dig_sites/4sbg.png",
+							"level": 95,
+							"hitpoints": 75,
+							"baseExperienceSuccess": 500,
+							"baseExperienceFailure": 1,
+							"baseExperienceArtefact": 525,
+							"baseMinInterval": 8000,
+							"baseMaxInterval": 15000,
+							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"materialDropTable": [
+								{
+									"itemID": "archaeology_skill:Voidfire_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Ancient_Glyphstone",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Emberheart_Ruby",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Stardust_Velvet",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Arcane_Essence",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							],
+							"artefactDropTable": [
+								{
+									"itemID": "archaeology_skill:Wyvernfang_Blades_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Drakesong_Lyre_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								},
+								{
+									"itemID": "archaeology_skill:Wyrmheart_Pendant_Damaged",
+									"minQuantity": 1,
+									"maxQuantity": 1,
+									"weight": 1
+								}
+							]
+						}
+					],
+					"digSites": [
+						{
+							"id": "Hawks_Hill_Dig_Site",
+							"name": "Hawk's Hill Dig Site",
+							"excavationHotspotIDs": [
+								"archaeology_skill:Royal_Nest_Remnants",
+								"archaeology_skill:Shardscattered_Potsherds_Debris",
+								"archaeology_skill:Rotted_Beam_Remnants"
+							]
+						},
+						{
+							"id": "Pharaohs_Sanctuary_Dig_Site",
+							"name": "Pharaoh's Sanctuary Dig Site",
+							"excavationHotspotIDs": [
+								"archaeology_skill:Luxors_Library_Remnants",
+								"archaeology_skill:Anubiss_Archive_Remains",
+								"archaeology_skill:Sphinxs_Secret_Pits"
+							]
+						},
+						{
+							"id": "Karnaks_Crypt_Dig_Site",
+							"name": "Karnak's Crypt Dig Site",
+							"excavationHotspotIDs": [
+								"archaeology_skill:Sacred_Necropolis_Remains",
+								"archaeology_skill:Lost_Pharaohs_Remains",
+								"archaeology_skill:Shadows_Chamber_Remnants"
+							]
+						},
+						{
+							"id": "Dragon_Burial_Dig_Site",
+							"name": "Dragon Burial Dig Site",
+							"excavationHotspotIDs": [
+								"archaeology_skill:Dragons_Rest_Mounds",
+								"archaeology_skill:Dragonfire_Crypts",
+								"archaeology_skill:Scalebound_Burial_Grounds"
+							]
+						}
+					],
+					"workbenchRecipe": [
+						{
+							"id": "Hawks_Eye_Pendant",
+							"productID": "archaeology_skill:Hawks_Eye_Pendant",
+							"level": 1,
+							"baseExperience": 40,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Hawks_Eye_Pendant_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Crystalized_Amethyst",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Elderwood_Essence",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Seraphic_Silver",
+									"quantity": 5
+								},
+								{
+									"id": "archaeology_skill:Celestial_Jade",
+									"quantity": 17
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Hawks_Wisdom_Scroll",
+							"productID": "archaeology_skill:Hawks_Wisdom_Scroll",
+							"level": 1,
+							"baseExperience": 40,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Hawks_Wisdom_Scroll_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Crystalized_Amethyst",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Elderwood_Essence",
+									"quantity": 4
+								},
+								{
+									"id": "archaeology_skill:Seraphic_Silver",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Celestial_Jade",
+									"quantity": 15
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Hawks_Flight_Mosaic_Tile",
+							"productID": "archaeology_skill:Hawks_Flight_Mosaic_Tile",
+							"level": 1,
+							"baseExperience": 40,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Hawks_Flight_Mosaic_Tile_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Crystalized_Amethyst",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Elderwood_Essence",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Seraphic_Silver",
+									"quantity": 17
+								},
+								{
+									"id": "archaeology_skill:Celestial_Jade",
+									"quantity": 3
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Shard_Of_The_Sun_Pottery",
+							"productID": "archaeology_skill:Shard_Of_The_Sun_Pottery",
+							"level": 40,
+							"baseExperience": 250,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Shard_Of_The_Sun_Pottery_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Celestial_Opal",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Astral_Shards",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_The_Ancients",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Emberglow_Amber",
+									"quantity": 15
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Relic_Craftsmans_Hammer",
+							"productID": "archaeology_skill:Relic_Craftsmans_Hammer",
+							"level": 40,
+							"baseExperience": 250,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Relic_Craftsmans_Hammer_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Celestial_Opal",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Astral_Shards",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_The_Ancients",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Emberglow_Amber",
+									"quantity": 9
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Lost_Masons_Chisel",
+							"productID": "archaeology_skill:Lost_Masons_Chisel",
+							"level": 60,
+							"baseExperience": 300,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Lost_Masons_Chisel_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_The_Abyss",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Prismatic_Crystalite",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Phoenix_Feather",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Astral_Steel",
+									"quantity": 12
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Ancient_Timber_Relic",
+							"productID": "archaeology_skill:Ancient_Timber_Relic",
+							"level": 60,
+							"baseExperience": 300,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Ancient_Timber_Relic_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_The_Abyss",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Prismatic_Crystalite",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Phoenix_Feather",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Astral_Steel",
+									"quantity": 5
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Cracked_Stone_Masonry_Tablet",
+							"productID": "archaeology_skill:Cracked_Stone_Masonry_Tablet",
+							"level": 60,
+							"baseExperience": 300,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Cracked_Stone_Masonry_Tablet_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_The_Abyss",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Prismatic_Crystalite",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Phoenix_Feather",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Astral_Steel",
+									"quantity": 14
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Librarians_Spectacles",
+							"productID": "archaeology_skill:Librarians_Spectacles",
+							"level": 5,
+							"baseExperience": 75,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Librarians_Spectacles_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Arcane_Quartz",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Lunar_Silk",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Primordial_Adamant",
+									"quantity": 3
+								},
+								{
+									"id": "archaeology_skill:Voidroot_Vine",
+									"quantity": 13
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Mythic_Archive_Key",
+							"productID": "archaeology_skill:Mythic_Archive_Key",
+							"level": 5,
+							"baseExperience": 75,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Mythic_Archive_Key_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Arcane_Quartz",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Lunar_Silk",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Primordial_Adamant",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Voidroot_Vine",
+									"quantity": 12
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Scriptorium_Manuscript_Fragment",
+							"productID": "archaeology_skill:Scriptorium_Manuscript_Fragment",
+							"level": 5,
+							"baseExperience": 75,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Scriptorium_Manuscript_Fragment_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Arcane_Quartz",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Lunar_Silk",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Primordial_Adamant",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Voidroot_Vine",
+									"quantity": 7
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Astrolabe_Relic",
+							"productID": "archaeology_skill:Astrolabe_Relic",
+							"level": 5,
+							"baseExperience": 75,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Astrolabe_Relic_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Arcane_Quartz",
+									"quantity": 16
+								},
+								{
+									"id": "archaeology_skill:Lunar_Silk",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Primordial_Adamant",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Voidroot_Vine",
+									"quantity": 5
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Sphinx_Guardian_Figurine",
+							"productID": "archaeology_skill:Sphinx_Guardian_Figurine",
+							"level": 70,
+							"baseExperience": 315,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Sphinx_Guardian_Figurine_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Stormblossom_Petals",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Essence",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Shadowglass_Shard",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Radiant_Starstone",
+									"quantity": 11
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Eye_Of_Horus_Relic",
+							"productID": "archaeology_skill:Eye_Of_Horus_Relic",
+							"level": 70,
+							"baseExperience": 315,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Eye_Of_Horus_Relic_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Stormblossom_Petals",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Essence",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Shadowglass_Shard",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Radiant_Starstone",
+									"quantity": 7
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Anubis_Statue_Fragment",
+							"productID": "archaeology_skill:Anubis_Statue_Fragment",
+							"level": 70,
+							"baseExperience": 315,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Anubis_Statue_Fragment_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Stormblossom_Petals",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Essence",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Shadowglass_Shard",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Radiant_Starstone",
+									"quantity": 12
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Scarab_Amulet_Necklace",
+							"productID": "archaeology_skill:Scarab_Amulet_Necklace",
+							"level": 70,
+							"baseExperience": 315,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Scarab_Amulet_Necklace_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Stormblossom_Petals",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Essence",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Shadowglass_Shard",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Radiant_Starstone",
+									"quantity": 9
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Feathered_Frieze_Fragment",
+							"productID": "archaeology_skill:Feathered_Frieze_Fragment",
+							"level": 90,
+							"baseExperience": 450,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Feathered_Frieze_Fragment_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Dreamwalker_Silk",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Celestial_Sapphire",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Astral_Ember",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Serenity",
+									"quantity": 13
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Osiriss_Medallion",
+							"productID": "archaeology_skill:Osiriss_Medallion",
+							"level": 90,
+							"baseExperience": 450,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Osiriss_Medallion_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Dreamwalker_Silk",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Celestial_Sapphire",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Astral_Ember",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Serenity",
+									"quantity": 6
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Dreamweavers_Locket",
+							"productID": "archaeology_skill:Dreamweavers_Locket",
+							"level": 90,
+							"baseExperience": 450,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Dreamweavers_Locket_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Dreamwalker_Silk",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Celestial_Sapphire",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Astral_Ember",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Serenity",
+									"quantity": 12
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Starfire_Crystal_Shard",
+							"productID": "archaeology_skill:Starfire_Crystal_Shard",
+							"level": 90,
+							"baseExperience": 450,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Starfire_Crystal_Shard_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Dreamwalker_Silk",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Celestial_Sapphire",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Astral_Ember",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Serenity",
+									"quantity": 8
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Pharaohs_Crown_Jewel",
+							"productID": "archaeology_skill:Pharaohs_Crown_Jewel",
+							"level": 10,
+							"baseExperience": 135,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Pharaohs_Crown_Jewel_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Astral_Essence",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Stormforged_Iron",
+									"quantity": 3
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Pearl",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Shadowsteel_Alloy",
+									"quantity": 13
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Scarab_Encrusted_Ankh",
+							"productID": "archaeology_skill:Scarab_Encrusted_Ankh",
+							"level": 10,
+							"baseExperience": 135,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Scarab_Encrusted_Ankh_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Astral_Essence",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Stormforged_Iron",
+									"quantity": 18
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Pearl",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Shadowsteel_Alloy",
+									"quantity": 9
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Royal_Cartouche_Ring",
+							"productID": "archaeology_skill:Royal_Cartouche_Ring",
+							"level": 10,
+							"baseExperience": 135,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Royal_Cartouche_Ring_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Astral_Essence",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Stormforged_Iron",
+									"quantity": 4
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Pearl",
+									"quantity": 17
+								},
+								{
+									"id": "archaeology_skill:Shadowsteel_Alloy",
+									"quantity": 8
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Ancient_Talon_Coin",
+							"productID": "archaeology_skill:Ancient_Talon_Coin",
+							"level": 10,
+							"baseExperience": 135,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Ancient_Talon_Coin_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Astral_Essence",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Stormforged_Iron",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Ethereal_Pearl",
+									"quantity": 5
+								},
+								{
+									"id": "archaeology_skill:Shadowsteel_Alloy",
+									"quantity": 17
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Canopic_Jar_Of_Serenity",
+							"productID": "archaeology_skill:Canopic_Jar_Of_Serenity",
+							"level": 30,
+							"baseExperience": 200,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Canopic_Jar_Of_Serenity_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Ancient_Rune_Fabric",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Voidheart_Ruby",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Ashen_Emberstone",
+									"quantity": 4
+								},
+								{
+									"id": "archaeology_skill:Dreamweaver_Silk",
+									"quantity": 16
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Osiris_Relic_Staff",
+							"productID": "archaeology_skill:Osiris_Relic_Staff",
+							"level": 30,
+							"baseExperience": 200,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Osiris_Relic_Staff_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Ancient_Rune_Fabric",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Voidheart_Ruby",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Ashen_Emberstone",
+									"quantity": 5
+								},
+								{
+									"id": "archaeology_skill:Dreamweaver_Silk",
+									"quantity": 13
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Winged_Serpent_Statue",
+							"productID": "archaeology_skill:Winged_Serpent_Statue",
+							"level": 30,
+							"baseExperience": 200,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Winged_Serpent_Statue_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Ancient_Rune_Fabric",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Voidheart_Ruby",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Ashen_Emberstone",
+									"quantity": 16
+								},
+								{
+									"id": "archaeology_skill:Dreamweaver_Silk",
+									"quantity": 7
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Amethyst_Scarab_Pendant",
+							"productID": "archaeology_skill:Amethyst_Scarab_Pendant",
+							"level": 30,
+							"baseExperience": 20,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Amethyst_Scarab_Pendant_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Ancient_Rune_Fabric",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Voidheart_Ruby",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Ashen_Emberstone",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Dreamweaver_Silk",
+									"quantity": 11
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Cursed_Shadow_Amulet",
+							"productID": "archaeology_skill:Cursed_Shadow_Amulet",
+							"level": 50,
+							"baseExperience": 275,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Cursed_Shadow_Amulet_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidborne_Leather",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Arcanite_Residue",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Celestial_Topaz",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Thunderheart_Essence",
+									"quantity": 13
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Whispering_Ethereal_Orb",
+							"productID": "archaeology_skill:Whispering_Ethereal_Orb",
+							"level": 50,
+							"baseExperience": 275,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Whispering_Ethereal_Orb_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidborne_Leather",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Arcanite_Residue",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Celestial_Topaz",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Thunderheart_Essence",
+									"quantity": 7
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Shadowmancers_Amulet",
+							"productID": "archaeology_skill:Shadowmancers_Amulet",
+							"level": 50,
+							"baseExperience": 275,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Shadowmancers_Amulet_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidborne_Leather",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Arcanite_Residue",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Celestial_Topaz",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Thunderheart_Essence",
+									"quantity": 14
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Dragonfire_Amulet",
+							"productID": "archaeology_skill:Dragonfire_Amulet",
+							"level": 20,
+							"baseExperience": 170,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Dragonfire_Amulet_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Enigmatic_Obsidian",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Celestial_Feather",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Radiance",
+									"quantity": 13
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Crystal",
+									"quantity": 8
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Winged_Talon_Necklace",
+							"productID": "archaeology_skill:Winged_Talon_Necklace",
+							"level": 20,
+							"baseExperience": 170,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Winged_Talon_Necklace_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Enigmatic_Obsidian",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Celestial_Feather",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Radiance",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Crystal",
+									"quantity": 12
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Dragonbone_Relic",
+							"productID": "archaeology_skill:Dragonbone_Relic",
+							"level": 20,
+							"baseExperience": 170,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Dragonbone_Relic_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Enigmatic_Obsidian",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Celestial_Feather",
+									"quantity": 5
+								},
+								{
+									"id": "archaeology_skill:Essence_Of_Radiance",
+									"quantity": 14
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Crystal",
+									"quantity": 10
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Dragons_Eye_Gemstone",
+							"productID": "archaeology_skill:Dragons_Eye_Gemstone",
+							"level": 80,
+							"baseExperience": 390,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Dragons_Eye_Gemstone_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 11
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 16
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Scaled_Guardian_Idol",
+							"productID": "archaeology_skill:Scaled_Guardian_Idol",
+							"level": 80,
+							"baseExperience": 390,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Scaled_Guardian_Idol_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 15
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 5
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Draconic_Crest",
+							"productID": "archaeology_skill:Draconic_Crest",
+							"level": 80,
+							"baseExperience": 390,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Draconic_Crest_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Voidweave_Silk",
+									"quantity": 14
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Wyvernfang_Blades",
+							"productID": "archaeology_skill:Wyvernfang_Blades",
+							"level": 95,
+							"baseExperience": 525,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Wyvernfang_Blades_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Essence",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Ancient_Glyphstone",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Emberheart_Ruby",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Stardust_Velvet",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Arcane_Essence",
+									"quantity": 6
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Drakesong_Lyre",
+							"productID": "archaeology_skill:Drakesong_Lyre",
+							"level": 95,
+							"baseExperience": 525,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Drakesong_Lyre_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Essence",
+									"quantity": 5
+								},
+								{
+									"id": "archaeology_skill:Ancient_Glyphstone",
+									"quantity": 10
+								},
+								{
+									"id": "archaeology_skill:Emberheart_Ruby",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Stardust_Velvet",
+									"quantity": 12
+								},
+								{
+									"id": "archaeology_skill:Arcane_Essence",
+									"quantity": 6
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Wyrmheart_Pendant",
+							"productID": "archaeology_skill:Wyrmheart_Pendant",
+							"level": 95,
+							"baseExperience": 525,
+							"baseQuantity": 1,
+							"categoryID": "archaeology_skill:Workbench",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Wyrmheart_Pendant_Damaged",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Voidfire_Essence",
+									"quantity": 9
+								},
+								{
+									"id": "archaeology_skill:Ancient_Glyphstone",
+									"quantity": 6
+								},
+								{
+									"id": "archaeology_skill:Emberheart_Ruby",
+									"quantity": 7
+								},
+								{
+									"id": "archaeology_skill:Stardust_Velvet",
+									"quantity": 8
+								},
+								{
+									"id": "archaeology_skill:Arcane_Essence",
+									"quantity": 10
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						}
+					],
+					"collections": [
+						{
+							"id": "MuseumICollection",
+							"name": "Museum I",
+							"requiredItems": [
+								"archaeology_skill:Hawks_Eye_Pendant",
+								"archaeology_skill:Hawks_Wisdom_Scroll",
+								"archaeology_skill:Hawks_Flight_Mosaic_Tile",
+								"archaeology_skill:Winged_Talon_Necklace"
+							],
+							"rewardGold": 400000,
+							"rewardXp": 4000
+						},
+						{
+							"id": "MuseumIICollection",
+							"name": "Museum II",
+							"requiredItems": [
+								"archaeology_skill:Winged_Talon_Necklace",
+								"archaeology_skill:Scarab_Amulet_Necklace",
+								"archaeology_skill:Cursed_Shadow_Amulet",
+								"archaeology_skill:Shadowmancers_Amulet",
+								"archaeology_skill:Wyrmheart_Pendant",
+								"archaeology_skill:Amethyst_Scarab_Pendant",
+								"archaeology_skill:Hawks_Eye_Pendant",
+								"archaeology_skill:Dreamweavers_Locket",
+								"archaeology_skill:Dragonfire_Amulet"
+							],
+							"rewardGold": 900000,
+							"rewardXp": 9000
+						},
+						{
+							"id": "MuseumIIICollection",
+							"name": "Museum III",
+							"requiredItems": [
+								"archaeology_skill:Amethyst_Scarab_Pendant",
+								"archaeology_skill:Scarab_Amulet_Necklace",
+								"archaeology_skill:Scarab_Encrusted_Ankh"
+							],
+							"rewardGold": 300000,
+							"rewardXp": 3000
+						},
+						{
+							"id": "MuseumIVCollection",
+							"name": "Museum IV",
+							"requiredItems": [
+								"archaeology_skill:Pharaohs_Crown_Jewel",
+								"archaeology_skill:Osiriss_Medallion",
+								"archaeology_skill:Eye_Of_Horus_Relic",
+								"archaeology_skill:Canopic_Jar_Of_Serenity",
+								"archaeology_skill:Scarab_Encrusted_Ankh"
+							],
+							"rewardGold": 500000,
+							"rewardXp": 5000
+						},
+						{
+							"id": "MuseumVCollection",
+							"name": "Museum V",
+							"requiredItems": [
+								"archaeology_skill:Librarians_Spectacles",
+								"archaeology_skill:Ancient_Timber_Relic"
+							],
+							"rewardGold": 200000,
+							"rewardXp": 2000
+						},
+						{
+							"id": "MuseumVICollection",
+							"name": "Museum VI",
+							"requiredItems": [
+								"archaeology_skill:Dragonbone_Relic",
+								"archaeology_skill:Dragons_Eye_Gemstone",
+								"archaeology_skill:Draconic_Crest",
+								"archaeology_skill:Dragonfire_Amulet",
+								"archaeology_skill:Wyvernfang_Blades"
+							],
+							"rewardGold": 500000,
+							"rewardXp": 5000
+						},
+						{
+							"id": "MuseumVIICollection",
+							"name": "Museum VII",
+							"requiredItems": [
+								"archaeology_skill:Scaled_Guardian_Idol",
+								"archaeology_skill:Winged_Serpent_Statue",
+								"archaeology_skill:Anubis_Statue_Fragment",
+								"archaeology_skill:Sphinx_Guardian_Figurine"
+							],
+							"rewardGold": 400000,
+							"rewardXp": 40000
+						},
+						{
+							"id": "MuseumVIIICollection",
+							"name": "Museum VIII",
+							"requiredItems": [
+								"archaeology_skill:Starfire_Crystal_Shard",
+								"archaeology_skill:Whispering_Ethereal_Orb"
+							],
+							"rewardGold": 200000,
+							"rewardXp": 2000
+						},
+						{
+							"id": "MuseumIXCollection",
+							"name": "Museum IX",
+							"requiredItems": [
+								"archaeology_skill:Relic_Craftsmans_Hammer",
+								"archaeology_skill:Lost_Masons_Chisel",
+								"archaeology_skill:Shard_Of_The_Sun_Pottery"
+							],
+							"rewardGold": 300000,
+							"rewardXp": 3000
+						},
+						{
+							"id": "MuseumXCollection",
+							"name": "Museum X",
+							"requiredItems": [
+								"archaeology_skill:Feathered_Frieze_Fragment",
+								"archaeology_skill:Scriptorium_Manuscript_Fragment"
+							],
+							"rewardGold": 200000,
+							"rewardXp": 2000
+						},
+						{
+							"id": "MuseumXICollection",
+							"name": "Museum XI",
+							"requiredItems": [
+								"archaeology_skill:Shard_Of_The_Sun_Pottery",
+								"archaeology_skill:Hawks_Flight_Mosaic_Tile",
+								"archaeology_skill:Cracked_Stone_Masonry_Tablet"
+							],
+							"rewardGold": 300000,
+							"rewardXp": 3000
+						},
+						{
+							"id": "MuseumXIICollection",
+							"name": "Museum XII",
+							"requiredItems": [
+								"archaeology_skill:Wyrmheart_Pendant",
+								"archaeology_skill:Wyvernfang_Blades"
+							],
+							"rewardGold": 200000,
+							"rewardXp": 2000
+						}
+					],
+					"arcanumObeliskRelics": [
+						{
+							"id": "Vitality_Relic",
+							"name": "Vitality Relic",
+							"media": "assets/img/arcanum_obelisk/relics/vitality_relic.png",
+							"modifiers": {
+								"increasedFlatMaxHitpoints": 10
+							}
+						},
+						{
+							"id": "Swift_Renewal_Relic",
+							"name": "Swift Renewal Relic",
+							"media": "assets/img/arcanum_obelisk/relics/swift_renewal_relic.png",
+							"modifiers": {
+								"decreasedMonsterRespawnTimer": 1500
+							}
+						},
+						{
+							"id": "Everburning_Relic",
+							"name": "Everburning Relic",
+							"media": "assets/img/arcanum_obelisk/relics/everburning_relic.png",
+							"modifiers": {
+								"freeBonfires": 1
+							}
+						},
+						{
+							"id": "Piety_Relic",
+							"name": "Piety Relic",
+							"media": "assets/img/arcanum_obelisk/relics/piety_relic.png",
+							"modifiers": {
+								"decreasedPrayerCost": 50
+							}
+						},
+						{
+							"id": "Soulstealer_Relic",
+							"name": "Soulstealer Relic",
+							"media": "assets/img/arcanum_obelisk/relics/soulstealer_relic.png",
+							"modifiers": {
+								"increasedSCfromLifesteal": 50
+							}
+						},
+						{
+							"id": "Flaming_Catch_Relic",
+							"name": "Flaming Catch Relic",
+							"media": "assets/img/arcanum_obelisk/relics/flaming_catch_relic.png",
+							"modifiers": {
+								"increasedFishingCookedChance": 40
+							}
+						},
+						{
+							"id": "Slayers_Passage_Relic",
+							"name": "Slayer's Passage Relic",
+							"media": "assets/img/arcanum_obelisk/relics/slayers_passage_relic.png",
+							"modifiers": {
+								"bypassAllSlayerItems": 1
+							}
+						},
+						{
+							"id": "Auto_Scavenger_Relic",
+							"name": "Auto Scavenger Relic",
+							"media": "assets/img/arcanum_obelisk/relics/auto_scavenger_relic.png",
+							"modifiers": {
+								"autoLooting": 1
+							}
+						},
+						{
+							"id": "Essence_Amplifier_Relic",
+							"name": "Essence Amplifier Relic",
+							"media": "assets/img/arcanum_obelisk/relics/essence_amplifier_relic.png",
+							"modifiers": {
+								"doubleRuneEssenceMining": 1
+							}
+						},
+						{
+							"id": "Extended_Vault_Relic",
+							"name": "Extended Vault Relic",
+							"media": "assets/img/arcanum_obelisk/relics/extended_vault_relic.png",
+							"modifiers": {
+								"increasedBankSpace": 15
+							}
+						},
+						{
+							"id": "Monster_Annihilator_Relic",
+							"name": "Monster Annihilator Relic",
+							"media": "assets/img/arcanum_obelisk/relics/monster_annihilator_relic.png",
+							"modifiers": {
+								"increasedDamageToAllMonsters": 3
+							}
+						},
+						{
+							"id": "Covert_Hands_Relic",
+							"name": "Covert Hands Relic",
+							"media": "assets/img/arcanum_obelisk/relics/covert_hands_relic.png",
+							"modifiers": {
+								"increasedThievingStealth": 40
+							}
+						}
+					],
+					"skill_bonuses": [
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Iron_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 2
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Steel_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 3
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Mithril_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 4,
+								"archaeology_decrease_excavation_interval": 5
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Adamant_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 6,
+								"archaeology_decrease_excavation_interval": 10
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Rune_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 8,
+								"archaeology_decrease_excavation_interval": 15
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Dragon_Mattock",
+							"bonuses": {
+								"archaeology_increase_material_drop_rate": 10,
+								"archaeology_decrease_excavation_interval": 15
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Archaeology_Potion_I",
+							"bonuses": {
+								"archaeology_increase_artefact_drop_rate": 4
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Archaeology_Potion_II",
+							"bonuses": {
+								"archaeology_increase_artefact_drop_rate": 6
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Archaeology_Potion_III",
+							"bonuses": {
+								"archaeology_increase_artefact_drop_rate": 8
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Archaeology_Potion_IV",
+							"bonuses": {
+								"archaeology_increase_artefact_drop_rate": 10
+							}
+						},
+						{
+							"type": "Item",
+							"id": "archaeology_skill:Archaeology_Skillcape",
+							"bonuses": {
+								"archaeology_decrease_workbench_interval": 50
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Pool:Tier_0",
+							"bonuses": {
+								"archaeology_increase_mastery_xp": 5
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Pool:Tier_1",
+							"bonuses": {
+								"archaeology_increase_soil_double_chance": 5
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Pool:Tier_2",
+							"bonuses": {
+								"archaeology_decrease_material_cost": 50
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Pool:Tier_3",
+							"bonuses": {
+								"archaeology_increase_artefact_drop_rate": 5
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_0",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 5
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_1",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 10
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_2",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 15
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_3",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 20
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_4",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 25
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_5",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 30
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_6",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 35
+							}
+						}
+						,
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_7",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 40
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_8",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 45
+							}
+						},
+						{
+							"type": "Mastery",
+							"id": "Mastery_Level:Tier_9",
+							"bonuses": {
+								"archaeology_decrease_failed_excavation_chance": 50
+							}
+						}
+					]
+				}
+			},
+			{
+				"skillID": "melvorD:Smithing",
+				"data": {
+					"recipes": [
+						{
+							"id": "Bronze_Mattock",
+							"level": 1,
+							"productID": "archaeology_skill:Bronze_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 20,
+							"categoryID": "melvorD:BronzeGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Bronze_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Iron_Mattock",
+							"level": 15,
+							"productID": "archaeology_skill:Iron_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 40,
+							"categoryID": "melvorD:IronGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Iron_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Steel_Mattock",
+							"level": 30,
+							"productID": "archaeology_skill:Steel_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 60,
+							"categoryID": "melvorD:SteelGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Steel_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Mithril_Mattock",
+							"level": 45,
+							"productID": "archaeology_skill:Mithril_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 100,
+							"categoryID": "melvorD:MithrilGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Mithril_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Adamant_Mattock",
+							"level": 60,
+							"productID": "archaeology_skill:Adamant_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 120,
+							"categoryID": "melvorD:AdamantGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Adamantite_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Rune_Mattock",
+							"level": 75,
+							"productID": "archaeology_skill:Rune_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 150,
+							"categoryID": "melvorD:RuneGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Runite_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						},
+						{
+							"id": "Dragon_Mattock",
+							"level": 90,
+							"productID": "archaeology_skill:Dragon_Mattock",
+							"baseQuantity": 1,
+							"baseExperience": 200,
+							"categoryID": "melvorD:DragonGear",
+							"itemCosts": [
+								{
+									"id": "melvorD:Dragonite_Bar",
+									"quantity": 2
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						}
+					]
+				}
+			},
+			{
+				"skillID": "melvorD:Herblore",
+				"data": {
+					"recipes": [
+						{
+							"id": "Archaeology_Potion",
+							"name": "Archaeology Potion",
+							"level": 22,
+							"potionIDs": [
+								"archaeology_skill:Archaeology_Potion_I",
+								"archaeology_skill:Archaeology_Potion_II",
+								"archaeology_skill:Archaeology_Potion_III",
+								"archaeology_skill:Archaeology_Potion_IV"
+							],
+							"baseExperience": 19,
+							"categoryID": "melvorF:SkillPotions",
+							"itemCosts": [
+								{
+									"id": "archaeology_skill:Glimmering_Azure_Soil",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Golden_Sunstone_Sand",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Obsidian_Blackened_Soil",
+									"quantity": 1
+								},
+								{
+									"id": "archaeology_skill:Crimson_Dragonblood_Soil",
+									"quantity": 1
+								}
+							],
+							"gpCost": 0,
+							"scCost": 0
+						}
+					]
+				}
+			}
+		]
+	}
+}

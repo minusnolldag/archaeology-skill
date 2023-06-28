@@ -1,0 +1,29 @@
+<template id="scatter-item-template">
+	<div class="col-12 d-none" id="scatter-item-container">
+		<div class="block block-rounded-double bg-combat-inner-dark p-3">
+			<div class="row no-gutters">
+				<div class="col-4">
+					<h5 class="font-w700 text-left text-combat-smoke m-1 mb-2">
+						<lang-string lang-id="MENU_TEXT_Scatter_Item"></lang-string>
+					</h5>
+				</div>
+				<div class="col-8">
+					<h5 class="font-w400 font-size-sm text-right text-combat-smoke m-1 mb-2" id="scatter-item-prayer-points"></h5>
+				</div>
+				<div class="col-12 col-xl-8" id="size-elem-10">
+					<div class="form-group">
+						<input type="text" class="js-rangeslider" id="scatter-item-quantity-slider" name="bank-rangeslider-bury" value="0" data-min="0" data-max="0">
+					</div>
+				</div>
+				<div class="col-12 col-xl-4 text-right" id="size-elem-11">
+					<button role="button" class="btn btn-warning m-1" id="scatter-item-button">
+						<lang-string lang-id="MENU_TEXT_Scatter_Item"></lang-string>
+					</button>
+				</div>
+				<div class="col-12 text-right">
+					<h5 class="font-w400 font-size-sm text-combat-smoke m-1 mb-2" id="scatter-item-total-points"></h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

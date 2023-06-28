@@ -1,0 +1,63 @@
+<template id="archaeology-artisan-menu-template">
+	<div class="col-12">
+		<div class="row row-deck gutters-tiny">
+			<div class="col-4">
+				<div class="block block-rounded-double bg-combat-inner-dark text-center p-3">
+					<img class="bank-img resize-48" id="product-image" src="assets/media/main/question.svg">
+					<div style="position:absolute;left:0;bottom:10px;width:100%;">
+						<small class="font-w600 badge-pill bg-secondary m-1 text-white" id="produce-quantity">-</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="block block-rounded-double bg-combat-inner-dark p-2">
+					<div class="font-size-sm font-w600 text-muted">
+						<h5 class="font-size-sm font-w600 text-muted m-1">
+							<lang-string lang-id="MENU_TEXT_RESTORE"></lang-string>
+						</h5>
+						<h5 class="font-w700 text-left text-combat-smoke m-1">
+							<span id="product-name">-</span>
+						</h5>
+						<h5 class="font-w400 font-size-sm text-left text-bank-desc m-1 mb-2">
+							<small class="text-info" id="product-description"></small>
+						</h5>
+						<h5 class="font-w400 font-size-sm text-left text-bank-desc m-1 mb-2">
+							<small id="no-item-selected"></small>
+						</h5>
+					</div>
+					<div class="col-12">
+						<div class="row" id="buffs-icon-container"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-deck gutters-tiny">
+			<div class="col-12 col-sm-6 ">
+				<div class="block block-rounded-double bg-combat-inner-dark pt-2 pb-2">
+					<div class="font-size-sm font-w600 text-center text-muted" id="item-requirements"></div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6">
+				<div class="block block-rounded-double bg-combat-inner-dark pt-2 pb-2">
+					<div class="font-size-sm font-w600 text-center text-muted" id="item-haves"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 block block-rounded-double bg-combat-inner-dark pt-2 pb-1 text-center">
+			<div class="row no-gutters">
+				<div class="col-12 col-sm-6 pb-2" id="produces-single"></div>
+				<div class="col-12 col-sm-6 pb-2" id="grants"></div>
+			</div>
+		</div>
+		<div class="block block-rounded-double bg-combat-inner-dark p-3">
+			<div class="font-size-sm font-w600 text-center text-muted d-flex justify-content-center pb-2" id="restore-row">
+				<button type="button" class="btn btn-success m-1 p-2" style="height: 48px;" id="restore-button">
+					<lang-string lang-id="MENU_TEXT_RESTORE"></lang-string>
+				</button>
+			</div>
+			<div class="progress active mt-3" style="height: 5px">
+				<div id="progress-bar" class="progress-bar bg-info progress-fast" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+		</div>
+	</div>
+</template>

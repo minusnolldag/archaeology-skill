@@ -1,0 +1,71 @@
+.bg-archaeology {
+	background-color: #1893F5 !important;
+}
+
+.bg-archaeology-50 {
+	background-color: #1893F53D !important;
+}
+.border-archaeology {
+	border-color: #1893F5 !important;
+}
+
+.archaeology-img {
+	height: 38px;
+	width: 38px;
+}
+
+.collection-block {
+	box-shadow: 0 1px 2px rgb(33 34 35/50%),0 1px 2px rgb(26 26 27/50%) !important;
+	color: #F5F5F5 !important;
+	margin-bottom: 1.25rem;
+}
+
+.collection-item-icon {
+	background-color: #3E4856 !important;
+	border-radius: 5px;
+	height: 48px;
+	position: relative;
+	width: 48px;
+}
+
+.collection-item-icon > div, .collection-item-icon > div > a, .relic-icon > div, .relic-icon > div > a {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.collection-item-icon > div > a > img {
+	height: 48px;
+	pointer-events: none;
+	width: 48px;
+}
+
+.relic-icon {
+	background-color: #3E4856 !important;
+	border-color: #30c78d;
+	border-radius: 5px;
+	border-style: solid !important;
+	border-width: 2px !important;
+	height: 68px;
+	position: relative;
+	width: 68px;	
+}
+
+.relic-icon > div > div {
+	bottom: -10px;
+	position: absolute;
+	width: 100%;
+}
+
+.relic-icon-border-danger {
+	border-color: #E56767 !important;
+}
+
+.relic-icon-border-danger > div > div > i {
+	background-color: #E56767 !important;
+	color: #000 !important;
+}
+
+.no-drag {
+	pointer-events: none;
+}

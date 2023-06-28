@@ -1,0 +1,57 @@
+<template id="archaeology-dig-site-menu-template">
+	<div class="col-12 col-xl-6">
+		<div class="block block-rounded border-top border-archaeology border-4x" id="dig-site-block">
+			<div class="row gutters-tiny">
+				<div class="col-12" id="dig-site-header">
+					<div class="block-content text-center">
+						<i class="fa text-muted mr-2 font-w300 fa-eye pointer-enabled" id="dig-site-eyecon"></i>
+						<span class="h5 font-w600" id="dig-site-name"></span>
+					</div>
+				</div>
+				<div class="col-6" id="names-container">
+					<div class="block-content block-content-full text-center" id="button-container"></div>
+				</div>
+				<div class="col-6" id="info-container">
+					<div class="block-content block-content-full text-center" id="info-container">
+						<div class="media d-flex align-items-center push">
+							<div class="mr-3">
+								<img class="archaeology-img m-2 d-none" id="archaeology-image">
+							</div>
+							<div class="media-body">
+								<small>
+									<lang-string lang-id="SKILL_NAME_Archaeology"></lang-string>
+								</small>
+								<br>
+								<span id="excavation-hotspot-name">-</span>
+							</div>
+						</div>
+						<div class="col-12 d-none" id="excavation-hotspot-info-container">
+							<div class="col-12 row justify-content-center gutters-tiny text-center mb-3" id="xp-grants-container"></div>
+							<div class="col-12 row justify-content-center gutters-tiny text-center mb-3" id="mastery-grants-container"></div>
+							<div class="h5 font-w400 font-size-sm text-combat-smoke m-2">
+								<i class="far fa-clock mr-1"></i>
+								<span id="excavation-hotspot-interval"></span>
+							</div>
+							<mastery-display class="mastery-4" id="archaeology-mastery"></mastery-display>
+							<small id="excavation-hotspot-hp-progress-text">-</small>
+							<div class="progress active mb-1" style="height: 5px;">
+								<div id="digging-progress" class="progress-bar bg-danger" role="progressbar" style="width: 0%;"></div>
+							</div>
+							<div class="progress active">
+								<div id="excavation-hotspot-hp-progress" class="progress-bar bg-archaeology" role="progressbar" style="width: 0%;"></div>
+							</div>
+						</div>
+						<button role="button" class="btn btn-sm btn-success m-1 mt-3 d-none" id="start-button"></button>
+						<button role="button" class="btn btn-sm btn-info m-1 mt-3 d-none" id="show-drops-button"><lang-string lang-id="MENU_TEXT_SHOW_DROPS"></lang-string></button>
+						<div class="col-12">
+							<div class="spinner-border spinner-border-sm text-primary mr-2 d-none" id="status-spinner" role="status"></div>
+							<span class="font-w400 font-size-sm">
+								<small id="status-text"></small>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

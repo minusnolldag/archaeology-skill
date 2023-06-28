@@ -1,0 +1,55 @@
+<template id="arcanum-obelisk-component">
+	<div class="row no-gutters" style="justify-content: center;">
+		<div class="col-12 col-md-4" style="min-width: 375px">
+			<div class="block-content block-content-full"style="min-width: 375px">
+				<img class="no-drag" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg" id="obelisk-image">
+				<div id="relic-1" class="d-none" style="position: absolute; margin-top: -311px; margin-left: 134px;">
+					<img class="no-drag" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg" id="relic-1-image" style="height: 64px; width: 64px;">
+				</div>
+				<div id="relic-2" class="d-none" style="position: absolute; margin-top: -225px; margin-left: 134px;">
+					<img class="no-drag" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg" id="relic-2-image" style="height: 64px; width: 64px;">
+				</div>
+				<div id="relic-3" class="d-none" style="position: absolute; margin-top: -136px; margin-left: 134px;">
+					<img class="no-drag" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg" id="relic-3-image" style="height: 64px; width: 64px;">
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-8">
+			<div class="block-content block-content-full">
+				<div class="col-12 text-center">
+					<h5 class="h4 font-w600 text-combat-smoke mb-1">
+						<span>
+							<span id="relic-points"></span>
+							<img class="ml-1 mr-1 no-drag" src="https://cdn.melvor.net/core/v018/assets/media/main/question.svg" style="width: 32px;" id="relic-point-image"> 
+							<lang-string lang-id="YOU_HAVE_RELIC_POINTS_2"></lang-string>
+						</span>
+					</h5>
+					<h5 class="font-w600 font-size-sm text-warning">
+						<span>
+							<lang-string lang-id="RELIC_POINTS_OBTAINED"></lang-string>
+						</span>
+						<br><br>
+						<span class="text-danger">
+							<lang-string lang-id="RELIC_POINTS_NO_UNDO"></lang-string>
+						</span>
+					</h5>
+					
+					
+					</div>
+				<div class="row" id="relic-power-icons-container"></div>
+			</div>
+		</div>
+	</div>
+</template>
+<template id="relic-power-icon-container">
+	<div class="relic-icon pointer-enabled m-2 relic-icon-border-danger" id="icon-container">
+		<div>
+			<a role="button" id="link">
+				<img class="bank-img p-3" id="icon">
+			</a>
+			<div class="font-size-sm text-white text-center" id="lock-icon-container">
+				<i class="fa fa-lock ml-1 mr-1 pb-1 pt-1 badge-pill"></i>
+			</div>
+		</div>
+	</div>
+</template>

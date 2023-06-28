@@ -1,0 +1,4 @@
+{
+	"namespace": "archaeology_skill",
+	"setup": "assets/js/setup.mjs"
+}
