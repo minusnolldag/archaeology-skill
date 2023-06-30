@@ -42,16 +42,22 @@ async function PatchItemData() {
 		}
 	});
 	patch(Bank, "readItemOnClick").after((o, item) => {
-		if (item instanceof ReadableItem) {
-			if (item.id == "archaeology_skill:Archaeology_New_Joiner") {
-				game.archaeology.readNewJoinersBook = true;
+		if (game.currentGamemode.id !== "melvorF:Adventure") {
+			if (item instanceof ReadableItem) {
+				if (item.id == "archaeology_skill:Archaeology_New_Joiner") {
+					document.getElementById("lore-Archaeology_New_Joiner-unlocked").classList.remove("d-none");
+					game.archaeology.readNewJoinersBook = true;
+				}
 			}
 		}
 	});
 	patch(Lore, "readLore").after((o, book) => {
-		if (book instanceof LoreBook) {
-			if (book.id == "archaeology_skill:Archaeology_New_Joiner") {
-				game.archaeology.readNewJoinersBook = true;
+		if (game.currentGamemode.id !== "melvorF:Adventure") {
+			if (book instanceof LoreBook) {
+				if (book.id == "archaeology_skill:Archaeology_New_Joiner") {
+					document.getElementById("lore-Archaeology_New_Joiner-unlocked").classList.remove("d-none");
+					game.archaeology.readNewJoinersBook = true;
+				}
 			}
 		}
 	});

@@ -27,7 +27,13 @@ export class Archaeology extends ArtisanSkill {
 		this.baseExcavationInterval = 1000;
 		this.renderQueue = new RenderQueue();
 		this.showNotifications = true;
-		this.readNewJoinersBook = false;
+
+		if (game.currentGamemode.id !== "melvorF:Adventure") {
+			this.readNewJoinersBook = false;
+		} else {
+			this.readNewJoinersBook = true;
+		}
+
 		this.foundFirstArtefact = false;
 		this.currentRelicPoints = 0;
 		this.currentRelicPowers = new EquippedRelics(3, this);
@@ -967,8 +973,10 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	render() {
-		if (this.readNewJoinersBook != this.isUnlocked) {
-			this.setUnlock(this.readNewJoinersBook);
+		if (game.currentGamemode.id !== "melvorF:Adventure") {
+			if (this.readNewJoinersBook != this.isUnlocked) {
+				this.setUnlock(this.readNewJoinersBook);
+			}
 		}
 
 		if (this.renderQueue.progressBar) {
@@ -1104,6 +1112,10 @@ export class Archaeology extends ArtisanSkill {
 		});
 		this.menu.updateInterval(interval);
 		this.renderQueue.recipeInfo = false;
+	}
+
+	recordCostPreservationStats(costs) {
+		
 	}
 
 	GiveNewJoinerBook() {

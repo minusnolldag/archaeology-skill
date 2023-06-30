@@ -1,4 +1,5 @@
 {
 	"namespace": "archaeology_skill",
+	"icon": "assets/img/archaeology_skill_logo.png",
 	"setup": "assets/js/setup.mjs"
 }
