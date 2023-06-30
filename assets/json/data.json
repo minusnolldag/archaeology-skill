@@ -3602,7 +3602,7 @@
 							"baseExperienceArtefact": 170,
 							"baseMinInterval": 3000,
 							"baseMaxInterval": 10000,
-							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"soil": "archaeology_skill:Crimson_Dragonblood_Soil",
 							"materialDropTable": [
 								{
 									"itemID": "archaeology_skill:Enigmatic_Obsidian",
@@ -3661,7 +3661,7 @@
 							"baseExperienceArtefact": 390,
 							"baseMinInterval": 6000,
 							"baseMaxInterval": 13000,
-							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"soil": "archaeology_skill:Crimson_Dragonblood_Soil",
 							"materialDropTable": [
 								{
 									"itemID": "archaeology_skill:Voidweave_Silk",
@@ -3720,7 +3720,7 @@
 							"baseExperienceArtefact": 525,
 							"baseMinInterval": 8000,
 							"baseMaxInterval": 15000,
-							"soil": "archaeology_skill:Obsidian_Blackened_Soil",
+							"soil": "archaeology_skill:Crimson_Dragonblood_Soil",
 							"materialDropTable": [
 								{
 									"itemID": "archaeology_skill:Voidfire_Essence",
