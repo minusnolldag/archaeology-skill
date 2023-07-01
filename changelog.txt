@@ -1,5 +1,5 @@
-Changelog for Archeology Skill
-------------------------------
+Changelog for Archaeology Skill
+-------------------------------
 
 v1.2 - [7adbae6]
 	1. Fixed Dragons_Rest_Mounds, Dragonfire_Crypts and Scalebound_Burial_Grounds excavation hotspots to drop the correct soil. (Thanks to jalbouwmeester for reporting the bug!)
