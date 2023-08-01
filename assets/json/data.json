@@ -4682,7 +4682,7 @@
 							"id": "Amethyst_Scarab_Pendant",
 							"productID": "archaeology_skill:Amethyst_Scarab_Pendant",
 							"level": 30,
-							"baseExperience": 20,
+							"baseExperience": 200,
 							"baseQuantity": 1,
 							"categoryID": "archaeology_skill:Workbench",
 							"itemCosts": [
