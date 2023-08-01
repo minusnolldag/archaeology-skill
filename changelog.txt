@@ -1,6 +1,9 @@
 Changelog for Archaeology Skill
 -------------------------------
 
+v1.4 - [f584dc6]
+	1. Fixed issue with Amethyst_Scarab_Pendant giving the incorrect exp (Thanks to DaemonarchWJ for reporting the bug!)
+
 v1.3 - [ec86f6b]
 	1. Fixed issue with image not loading correctly with Eternal_Wrath and Pharaohs_Judgement special attacks. This fixes issue #1 (Thanks to taranpitman for reporting the bug!)
 
