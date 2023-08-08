@@ -14,9 +14,11 @@ export async function setup({ loadTemplates, loadStylesheet, loadModule, patch, 
 
 	console.log("Registering Archaeology Menus");
 	const { ScatterItemMenu } = await loadModule("assets/js/menus/scatter_item_menu.mjs");
+	const { ArchaeologyDigSiteMenu } = await loadModule("assets/js/menus/archaeology_dig_site_menu.mjs");
 	const { ArchaeologyMenu } = await loadModule("assets/js/menus/archaeology_menu.mjs");
 	const { ArchaeologyCollectionsMenu } = await loadModule("assets/js/menus/archaeology_collections_container.mjs");
 	const { ArchaeologySelectionTab } = await loadModule("assets/js/menus/archaeology_selection_tab.mjs");
+	const { RelicPowerIconMenu } = await loadModule("assets/js/menus/relic_power_icon_menu.mjs");
 	const { ArcanumObeliskMenu } = await loadModule("assets/js/menus/arcanum_obelisk_menus.mjs");
 	await loadModule("assets/js/menus/archaeology_artisan_menu.mjs");
 
@@ -29,7 +31,7 @@ export async function setup({ loadTemplates, loadStylesheet, loadModule, patch, 
 
 	console.log("Registering OnInterfaces");
 	const { OnInterfaces } = await loadModule("assets/js/on_interfaces.mjs");
-	const onInterfaces = new OnInterfaces(ArchaeologyMenu, ArchaeologyCollectionsMenu, ArchaeologySelectionTab, ArcanumObeliskMenu);
+	const onInterfaces = new OnInterfaces(ArchaeologyMenu, ArchaeologyDigSiteMenu,  ArchaeologyCollectionsMenu, ArchaeologySelectionTab, ArcanumObeliskMenu, RelicPowerIconMenu);
 
 	onInterfaceAvailable(async () => {
 		onInterfaces.OnInterfaceAvailable();

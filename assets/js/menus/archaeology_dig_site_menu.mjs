@@ -1,9 +1,3 @@
-const { loadModule } = mod.getContext(import.meta);
-const { ArchaeologySuccessXPIcon } = await loadModule("assets/js/menus/icons/archaeology_success_xp_icon.mjs");
-const { ArchaeologyFailureXPIcon } = await loadModule("assets/js/menus/icons/archaeology_failure_xp_icon.mjs");
-const { ArchaeologyArtefactXPIcon } = await loadModule("assets/js/menus/icons/archaeology_artefact_xp_icon.mjs");
-const { ArchaeologyExcavationHotspotButtonMenu } = await loadModule("assets/js/menus/archaeology_excavation_hotspot_button_menu.mjs");
-
 export class ArchaeologyDigSiteMenu {
 	constructor(digSite, archaeology, parent) {
 		this.digSite = digSite;
@@ -214,5 +208,82 @@ export class ArchaeologyDigSiteMenu {
 		html += "</span>";
 
 		return html;
+	}
+}
+
+export class ArchaeologyArtefactXPIcon extends XPIcon {
+	constructor(parent, xp, size = 48) {
+		super(parent, "bg-secondary", size);
+		this.xp = xp;
+	}
+
+	getTooltipContent(xp) {
+		return `<div class="text-center">${templateLangString("MENU_TEXT_TOOLTIP_SKILL_XP", {
+			xp: `${xp}`,
+		})}<br><small>${getLangString("MENU_TEXT_Artefact_XP")}</small></div>`;
+	}
+}
+
+export class ArchaeologyFailureXPIcon extends XPIcon {
+	constructor(parent, xp, size = 48) {
+		super(parent, "bg-secondary", size);
+		this.xp = xp;
+	}
+
+	getTooltipContent(xp) {
+		return `<div class="text-center">${templateLangString("MENU_TEXT_TOOLTIP_SKILL_XP", {
+			xp: `${xp}`,
+		})}<br><small>${getLangString("MENU_TEXT_Failure_XP")}</small></div>`;
+	}
+}
+
+export class ArchaeologySuccessXPIcon extends XPIcon {
+	constructor(parent, xp, size = 48) {
+		super(parent, "bg-secondary", size);
+		this.xp = xp;
+	}
+
+	getTooltipContent(xp) {
+		return `<div class="text-center">${templateLangString("MENU_TEXT_TOOLTIP_SKILL_XP", {
+			xp: `${xp}`,
+		})}<br><small>${getLangString("MENU_TEXT_Success_XP")}</small></div>`;
+	}
+}
+
+export class ArchaeologyExcavationHotspotButtonMenu {
+	constructor(excavationHotspot, digSite, archaeology, parent) {
+		this.excavationHotspot = excavationHotspot;
+		this.digSite = digSite;
+		this.archaeology = archaeology;
+		this._content = new DocumentFragment();
+		this._content.append(getTemplateNode("archaeology-excavation-hotspot-button-menu-template"));
+		this.excavationHotspotName = getElementFromFragment(this._content, "excavation-hotspot-name", "small");
+		this.link = getElementFromFragment(this._content, "link", "a");
+		parent.append(this._content);
+	}
+
+	SetExcavationHotspotName() {
+		this.excavationHotspotName.textContent = this.excavationHotspot.name.replace("&apos;", "'");
+	}
+
+	SetExcavationHotspotUnlocked() {
+		this.SetExcavationHotspotName();
+		this.excavationHotspotName.classList.remove("text-danger");
+		//this.link.onclick = () => this.archaeology.SelectExcavationHotspot(this.digSite, this.excavationHotspot);
+		this.link.onclick = () => this.archaeology.selectRecipeOnClick(this.excavationHotspot);
+	}
+
+	SetExcavationHotspotLocked() {
+		this.excavationHotspotName.classList.add("text-danger");
+		this.excavationHotspotName.textContent = "";
+		this.excavationHotspotName.append(...templateLangStringWithNodes("MENU_TEXT_UNLOCKED_AT", {
+			skillImage: createElement("img", {
+				classList: ["skill-icon-xs"],
+				attributes: [["src", this.archaeology.media]]
+			})
+		}, {
+			level: `${this.excavationHotspot.level}`
+		}));
+		this.link.onclick = null;
 	}
 }

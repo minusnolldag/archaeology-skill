@@ -1,8 +1,6 @@
-const { loadModule } = mod.getContext(import.meta);
-const { RelicPowerIconMenu } = await loadModule("assets/js/menus/relic_power_icon_menu.mjs");
-
 export class ArcanumObeliskMenu {
-	constructor(parent) {
+	constructor(parent, rpim) {
+		this.RelicPowerIconMenu = rpim;
 		this._content = new DocumentFragment();
 		this._content.append(getTemplateNode("arcanum-obelisk-component"));
 		this.obeliskImage = getElementFromFragment(this._content, "obelisk-image", "img");
@@ -25,7 +23,7 @@ export class ArcanumObeliskMenu {
 		this.relicPointImage.src = game.archaeology.RelicPointImage;
 		this.relicPowerIconMenus = new Map();
 		game.archaeology.arcanumObeliskRelics.forEach((relic) => {
-			this.relicPowerIconMenus.set(relic, new RelicPowerIconMenu(relic, this.relicPowerIconsContainer));
+			this.relicPowerIconMenus.set(relic, new this.RelicPowerIconMenu(relic, this.relicPowerIconsContainer));
 		});
 		parent.append(this._content);
 	}

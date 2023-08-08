@@ -1,9 +1,11 @@
 export class OnInterfaces {
-	constructor(am, acm, ast, aom) {
+	constructor(am, adsm, acm, ast, aom, rpim) {
 		this.ArchaeologyMenu = am;
+		this.ArchaeologyDigSiteMenu = adsm;
 		this.ArchaeologyCollectionsMenu = acm;
 		this.ArchaeologySelectionTab = ast;
 		this.ArcanumObeliskMenu = aom;
+		this.RelicPowerIconMenu = rpim;
 	}
 
 	OnInterfaceAvailable() {
@@ -35,7 +37,7 @@ export class OnInterfaces {
 	AddArchaeologyMenus() {
 	ui.createStatic("#archaeology-skill-mod-modal-book", document.getElementById("page-container"));
 	ui.createStatic("#archaeology-skill-mod-component", document.getElementById("main-container"));
-		game.archaeology.archaeologyMenus = new this.ArchaeologyMenu(game.archaeology);
+		game.archaeology.archaeologyMenus = new this.ArchaeologyMenu(game.archaeology, this.ArchaeologyDigSiteMenu);
 		game.archaeology.archaeologyCollectionsMenu = new this.ArchaeologyCollectionsMenu(game.archaeology);
 		new CategoryMenu("archaeology-category-menu", "horizontal-navigation-archaeology", game.archaeology.categories.allObjects, "SELECT_ARCHEOLOGY_CATEGORY", this.SwitchArchaeologyCategory);
 		game.archaeology.categories.forEach((category) => {
@@ -48,7 +50,7 @@ export class OnInterfaces {
 		game.archaeology.selectionTabs.forEach((selectionTab) => {
 			selectionTab.localize();
 		});
-		game.archaeology.arcanumObeliskMenu = new this.ArcanumObeliskMenu(document.getElementById("archaeology-arcanum-obelisk-container"));
+		game.archaeology.arcanumObeliskMenu = new this.ArcanumObeliskMenu(document.getElementById("archaeology-arcanum-obelisk-container"), this.RelicPowerIconMenu);
 	}
 
 	SwitchArchaeologyCategory(category) {
