@@ -1,22 +1,6 @@
-const { loadModule } = mod.getContext(import.meta);
-const { ArchaeologyActionEvent } = await loadModule("assets/js/skill/action_event.mjs");
-const { ArcanumObeliskRelics } = await loadModule("assets/js/skill/arcanum_obelisk_relics.mjs");
-const { EquippedRelics } = await loadModule("assets/js/skill/equipped_relics.mjs");
-const { DigSites } = await loadModule("assets/js/skill/dig_sites.mjs");
-const { ExcavationHotspot } = await loadModule("assets/js/skill/excavation_hotspot.mjs");
-const { WorkbenchRecipe } = await loadModule("assets/js/skill/workbench_recipe.mjs");
-const { Collections } = await loadModule("assets/js/skill/collections.mjs");
-const { RenderQueue } = await loadModule("assets/js/skill/render_queue.mjs");
-
 export class Archaeology extends ArtisanSkill {
 	constructor(namespace, game) {
 		super(namespace, "Archaeology", game);
-		this.emptyArcanumObeliskRelic = new ArcanumObeliskRelics(game.registeredNamespaces.getNamespace("archaeology_skill"), {
-			"id": "Empty_Arcanum_Obelisk_Relic",
-			"name": "",
-			"media": "assets/img/question.svg",
-			"modifiers": {}
-		});
 		this._media = "assets/img/archaeology_skill_logo.png";
 		this.baseMasteryXP = 0;
 		this.baseFailExcavationChance = 30;
@@ -25,7 +9,6 @@ export class Archaeology extends ArtisanSkill {
 		this.baseFindArtefactChance = 50;
 		this.baseFindMaterialChance = 80;
 		this.baseExcavationInterval = 1000;
-		this.renderQueue = new RenderQueue();
 		this.showNotifications = true;
 
 		if (game.currentGamemode.id !== "melvorF:Adventure") {
@@ -36,7 +19,6 @@ export class Archaeology extends ArtisanSkill {
 
 		this.foundFirstArtefact = false;
 		this.currentRelicPoints = 0;
-		this.currentRelicPowers = new EquippedRelics(3, this);
 		this.activeExcavationHotspot = undefined;
 		this.digSites = new NamespaceRegistry(game.registeredNamespaces);
 		this.scatterItemMenu = undefined;
@@ -46,6 +28,25 @@ export class Archaeology extends ArtisanSkill {
 		this.collections = new NamespaceRegistry(game.registeredNamespaces);
 		this.arcanumObeliskRelics = new NamespaceRegistry(game.registeredNamespaces);
 		this.skillBonuses = new Map();
+	}
+
+	LastConstructor(aae, aor, er, ds, eh, wr, c, rq) {
+		this.ArchaeologyActionEvent = aae;
+		this.ArcanumObeliskRelics = aor;
+		this.EquippedRelics = er;
+		this.DigSites = ds;
+		this.ExcavationHotspot = eh;
+		this.WorkbenchRecipe = wr;
+		this.Collections = c;
+		this.RenderQueue = rq;
+		this.emptyArcanumObeliskRelic = new this.ArcanumObeliskRelics(game.registeredNamespaces.getNamespace("archaeology_skill"), {
+			"id": "Empty_Arcanum_Obelisk_Relic",
+			"name": "",
+			"media": "assets/img/question.svg",
+			"modifiers": {}
+		});
+		this.renderQueue = new this.RenderQueue();
+		this.currentRelicPowers = new this.EquippedRelics(3, this);
 	}
 
 	get ObeliskImage() {
@@ -111,7 +112,7 @@ export class Archaeology extends ArtisanSkill {
 
 	get actionInterval() {
 		if (this.selectedRecipe !== undefined) {
-			if (this.selectedRecipe instanceof ExcavationHotspot) {
+			if (this.selectedRecipe instanceof this.ExcavationHotspot) {
 				if (this.selectedRecipe.currentInterval !== undefined) {
 					return this.selectedRecipe.currentInterval;
 				} else {
@@ -149,7 +150,7 @@ export class Archaeology extends ArtisanSkill {
 
 					return this.selectedRecipe.currentInterval;
 				}
-			} else if (this.selectedRecipe instanceof WorkbenchRecipe) {
+			} else if (this.selectedRecipe instanceof this.WorkbenchRecipe) {
 				let interval = 15000;
 				const keys = [...game.combat.player.equipment.slotMap.keys()];
 
@@ -190,7 +191,7 @@ export class Archaeology extends ArtisanSkill {
 			if (this.isActive) {
 				this.stop();
 
-				if (this.selectedRecipe instanceof ExcavationHotspot) {
+				if (this.selectedRecipe instanceof this.ExcavationHotspot) {
 					this.archaeologyMenus.digSites.forEach((digSiteMenu) => {
 						digSiteMenu.SetStartButtonState(true);
 					});
@@ -234,7 +235,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (data.excavationHotspots !== null && data.excavationHotspots !== void 0) {
 			data.excavationHotspots.forEach((excavationHotspot) => {
-				this.actions.registerObject(new ExcavationHotspot(namespace, excavationHotspot, this.game));
+				this.actions.registerObject(new this.ExcavationHotspot(namespace, excavationHotspot, this.game));
 			});
 		} else {
 			console.log("Null or void 0");
@@ -242,7 +243,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (data.digSites !== null && data.digSites !== void 0) {
 			data.digSites.forEach((digSite) => {
-				this.digSites.registerObject(new DigSites(namespace, digSite, this, this.game));
+				this.digSites.registerObject(new this.DigSites(namespace, digSite, this, this.game));
 			});
 		} else {
 			console.log("Null or void 0");
@@ -258,7 +259,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (data.workbenchRecipe !== null && data.workbenchRecipe !== void 0) {
 			data.workbenchRecipe.forEach((recipe) => {
-				this.actions.registerObject(new WorkbenchRecipe(namespace, recipe, this.game, this));
+				this.actions.registerObject(new this.WorkbenchRecipe(namespace, recipe, this.game, this));
 			});
 		} else {
 			console.log("Null or void 0");
@@ -266,7 +267,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (data.collections !== null && data.collections !== void 0) {
 			data.collections.forEach((collection) => {
-				this.collections.registerObject(new Collections(namespace, collection, this, this.game));
+				this.collections.registerObject(new this.Collections(namespace, collection, this, this.game));
 			});
 		} else {
 			console.log("Null or void 0");
@@ -274,7 +275,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (data.arcanumObeliskRelics !== null && data.arcanumObeliskRelics !== void 0) {
 			data.arcanumObeliskRelics.forEach((arcanumObeliskRelic) => {
-				this.arcanumObeliskRelics.registerObject(new ArcanumObeliskRelics(namespace, arcanumObeliskRelic));
+				this.arcanumObeliskRelics.registerObject(new this.ArcanumObeliskRelics(namespace, arcanumObeliskRelic));
 			});
 		} else {
 			console.log("Null or void 0");
@@ -321,7 +322,7 @@ export class Archaeology extends ArtisanSkill {
 
 	postDataRegistration() {
 		super.postDataRegistration();
-		this.sortedMasteryActions = this.actions.filter(action => action instanceof ExcavationHotspot).sort((a, b) => a.level - b.level);
+		this.sortedMasteryActions = this.actions.filter(action => action instanceof this.ExcavationHotspot).sort((a, b) => a.level - b.level);
 		this.milestones.push(...this.actions.allObjects);
 		this.sortMilestones();
 	}
@@ -331,7 +332,7 @@ export class Archaeology extends ArtisanSkill {
 			let count = 0;
 
 			actionMap.forEach(action => {
-				if (!(action instanceof WorkbenchRecipe)) {
+				if (!(action instanceof this.WorkbenchRecipe)) {
 					count++;
 				}
 			});
@@ -344,7 +345,7 @@ export class Archaeology extends ArtisanSkill {
 		console.log("getTotalUnlockedMasteryActions");
 
 		return this.actions.filter((action) => {
-			return (this.level >= action.level) && (action instanceof ExcavationHotspot)
+			return (this.level >= action.level) && (action instanceof this.ExcavationHotspot)
 		}).length;
 	}
 
@@ -389,11 +390,11 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	getCurrentRecipeCosts() {
-		if (this.activeRecipe instanceof ExcavationHotspot) {
+		if (this.activeRecipe instanceof this.ExcavationHotspot) {
 			const costs = new Costs(this.game);
 
 			return costs;
-		} else if (this.activeRecipe instanceof WorkbenchRecipe) {
+		} else if (this.activeRecipe instanceof this.WorkbenchRecipe) {
 			return this.getRecipeCosts(this.activeRecipe);
 		}
 	}
@@ -535,7 +536,7 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	get actionRewards() {
-		if (this.activeRecipe instanceof ExcavationHotspot) {
+		if (this.activeRecipe instanceof this.ExcavationHotspot) {
 			const currentExcavationHotspot = this.activeRecipe;
 
 			if (currentExcavationHotspot === undefined) {
@@ -570,7 +571,7 @@ export class Archaeology extends ArtisanSkill {
 			}
 
 			if (rollPercentage(successChance)) {
-				const actionEvent = new ArchaeologyActionEvent(this, currentExcavationHotspot);
+				const actionEvent = new this.ArchaeologyActionEvent(this, currentExcavationHotspot);
 				let doubleSoilsChance = this.baseDoubleSoilChance;
 
 				if (this.isPoolTierActive(1)) {
@@ -688,7 +689,7 @@ export class Archaeology extends ArtisanSkill {
 			this.selectedRecipe.currentInterval = undefined;
 
 			return rewards;
-		} else if (this.activeRecipe instanceof WorkbenchRecipe) {
+		} else if (this.activeRecipe instanceof this.WorkbenchRecipe) {
 			const currentRecipe = this.activeRecipe;
 
 			if (currentRecipe === undefined) {
@@ -709,7 +710,7 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	addMasteryXPReward() {
-		if (this.activeRecipe instanceof ExcavationHotspot) {
+		if (this.activeRecipe instanceof this.ExcavationHotspot) {
 			this.addMasteryForAction(this.activeRecipe, this.masteryModifiedInterval);
 		}
 	}
@@ -719,13 +720,13 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	addMasteryXPReward() {
-		if (!(this.activeRecipe instanceof WorkbenchRecipe)) {
+		if (!(this.activeRecipe instanceof this.WorkbenchRecipe)) {
 			super.addMasteryXPReward();
 		}
 	}
 
 	getActionMasteryXP(action) {
-		if (action instanceof ExcavationHotspot) {
+		if (action instanceof this.ExcavationHotspot) {
 			return this.getMasteryXPToAddForAction(action, this.masteryModifiedInterval);
 		} else {
 			return 0;
@@ -733,7 +734,7 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	getBaseActionMasteryXP(action) {
-		if (action instanceof ExcavationHotspot) {
+		if (action instanceof this.ExcavationHotspot) {
 			return this.getBaseMasteryXPToAddForAction(action, this.masteryModifiedInterval);
 		} else {
 			return 0;
@@ -746,7 +747,7 @@ export class Archaeology extends ArtisanSkill {
 		const trueMasteries = new SparseNumericMap();
 
 		this.actionMastery.forEach(({level}, action) => {
-			if (!(action instanceof DummyMasteryAction) && !(action instanceof WorkbenchRecipe)) {
+			if (!(action instanceof DummyMasteryAction) && !(action instanceof this.WorkbenchRecipe)) {
 				this._totalCurrentMasteryLevel.add(action.namespace, level);
 				trueMasteries.add(action.namespace, 1);
 			}
@@ -757,9 +758,9 @@ export class Archaeology extends ArtisanSkill {
     }
 
 	selectRecipeOnClick(recipe) {
-		if (recipe instanceof ExcavationHotspot) {
+		if (recipe instanceof this.ExcavationHotspot) {
 			if (recipe !== this.selectedRecipe) {
-				if (this.selectedRecipe instanceof ExcavationHotspot) {
+				if (this.selectedRecipe instanceof this.ExcavationHotspot) {
 					let oldRecipe;
 					let oldDigSite;
 					let newRecipe;
@@ -795,7 +796,7 @@ export class Archaeology extends ArtisanSkill {
 						this.renderQueue.updateExcavationHotspotHP = true;
 						this.renderQueue.progressBar = true;
 					}
-				} else if (this.selectedRecipe instanceof WorkbenchRecipe || this.selectedRecipe === undefined) {
+				} else if (this.selectedRecipe instanceof this.WorkbenchRecipe || this.selectedRecipe === undefined) {
 					this.archaeologyMenus.digSites.forEach((digSiteMenu) => {
 						digSiteMenu.digSite.excavationHotspots.forEach((excavationHotspot) => {
 							if (excavationHotspot == recipe) {
@@ -821,9 +822,9 @@ export class Archaeology extends ArtisanSkill {
 					});
 				});
 			}
-		} else if (recipe instanceof WorkbenchRecipe) {
+		} else if (recipe instanceof this.WorkbenchRecipe) {
 			if (this.isActive) {
-				if (this.selectedRecipe instanceof ExcavationHotspot) {
+				if (this.selectedRecipe instanceof this.ExcavationHotspot) {
 					this.archaeologyArtisanMenu.selectedRecipe = recipe;
 					this.renderQueue.selectedRecipe = true;
 					this.render();
@@ -840,7 +841,7 @@ export class Archaeology extends ArtisanSkill {
 							console.warn("Could not scroll to element. Error: " + e);
 						}
 					}
-				} else if (this.selectedRecipe instanceof WorkbenchRecipe) {
+				} else if (this.selectedRecipe instanceof this.WorkbenchRecipe) {
 					if (this.selectedRecipe !== recipe) {
 						this.stop();
 						this.archaeologyArtisanMenu.selectedRecipe = recipe;
@@ -967,7 +968,7 @@ export class Archaeology extends ArtisanSkill {
 	}
 
 	updateMasteryDisplays(action) {
-		if (!action instanceof WorkbenchRecipe) {
+		if (!action instanceof this.WorkbenchRecipe) {
 			super.updateMasteryDisplays(action);
 		}
 	}
@@ -981,7 +982,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (this.renderQueue.progressBar) {
 			if (this.activeRecipe !== undefined) {
-				if (this.activeRecipe instanceof ExcavationHotspot) {
+				if (this.activeRecipe instanceof this.ExcavationHotspot) {
 					if (this.archaeologyMenus !== undefined) {
 						this.archaeologyMenus.digSites.forEach((digSiteMenu) => {
 							if (digSiteMenu.selectedExcavationHotspot == this.activeRecipe) {
@@ -996,7 +997,7 @@ export class Archaeology extends ArtisanSkill {
 							}
 						});
 					}
-				} else if (this.activeRecipe instanceof WorkbenchRecipe) {
+				} else if (this.activeRecipe instanceof this.WorkbenchRecipe) {
 					if (this.archaeologyArtisanMenu !== undefined) {
 						if (this.isActive) {
 							this.archaeologyArtisanMenu.animateProgressFromTimer(this.actionTimer);
@@ -1067,7 +1068,7 @@ export class Archaeology extends ArtisanSkill {
 		}
 
 		if (this.archaeologyArtisanMenu.selectedRecipe !== undefined) {
-			if (this.archaeologyArtisanMenu.selectedRecipe instanceof WorkbenchRecipe) {
+			if (this.archaeologyArtisanMenu.selectedRecipe instanceof this.WorkbenchRecipe) {
 				const product = game.archaeology.actions.filter(action => action.localID == this.archaeologyArtisanMenu.selectedRecipe.localID)[0];
 				const costs = this.getRecipeCosts(this.archaeologyArtisanMenu.selectedRecipe);
 
@@ -1207,7 +1208,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (game.archaeology.isActive) {
 			if (game.archaeology.selectedRecipe !== undefined) {
-				if (game.archaeology.selectedRecipe instanceof ExcavationHotspot) {
+				if (game.archaeology.selectedRecipe instanceof this.ExcavationHotspot) {
 					game.archaeology.archaeologyMenus.digSites.forEach((digSiteMenu) => {
 						digSiteMenu.digSite.excavationHotspots.forEach((digSite) => {
 							if (digSite === game.archaeology.selectedRecipe) {
@@ -1219,7 +1220,7 @@ export class Archaeology extends ArtisanSkill {
 							}
 						});
 					});
-				} else if (game.archaeology.selectedRecipe instanceof WorkbenchRecipe) {
+				} else if (game.archaeology.selectedRecipe instanceof this.WorkbenchRecipe) {
 					this.archaeologyArtisanMenu.selectedRecipe = this.selectedRecipe;
 					this.renderQueue.selectedRecipe = true;
 					this.render();
