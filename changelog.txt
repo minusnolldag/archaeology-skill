@@ -1,6 +1,9 @@
 Changelog for Archaeology Skill
 -------------------------------
 
+v1.5 - [de9aad6]
+	1. Fixed bugs to address #2 (Thanks to AlakhaiVaynard for reporting the bug!)
+
 v1.4 - [f584dc6]
 	1. Fixed issue with Amethyst_Scarab_Pendant giving the incorrect exp (Thanks to DaemonarchWJ for reporting the bug!)
 
