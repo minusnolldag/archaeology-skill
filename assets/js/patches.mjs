@@ -19,6 +19,7 @@ export class Patches {
 		this.PatchReadLore();
 		this.PatchGetItemTooltipHTML();
 		this.PatchSetItem();
+		this.PatchGetMonsterSpawnTime();
 	}
 
 	PatchConstructEventMatcher() {
@@ -277,6 +278,24 @@ export class Patches {
 					this.statsContainer.innerHTML += `<h5 class="font-w400 font-size-sm text-combat-smoke m-1 mb-2"><strong>${getLangString("STATISTICS_ITEMS_TIMES_SCATTERED")} </strong>${numberWithCommas(timesScattered)}</h5>`
 				}
 			}
+		});
+	}
+
+	PatchGetMonsterSpawnTime() {
+		// This is temporary due to a bug with Player.getMonsterSpawnTime()
+		this.patch(Player, "getMonsterSpawnTime").replace(function(o) {
+			let spawnTime = this.baseSpawnInterval;
+
+			spawnTime -= this.modifiers.decreasedMonsterRespawnTimer;
+			spawnTime += this.modifiers.increasedMonsterRespawnTimer;
+
+			if (spawnTime < 50) {
+				spawnTime = 50;
+			}
+
+			console.log(spawnTime);
+
+			return spawnTime;
 		});
 	}
 }
