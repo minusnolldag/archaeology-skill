@@ -1,6 +1,9 @@
 Changelog for Archaeology Skill
 -------------------------------
 
+v1.6 - [93aed45]
+	1. Fixed a bug when modifiers.decreasedMonsterRespawnTimer is greater than Player.baseSpawnInterval. Which causes the game to crash due to Timer.start throwing an error. (Thanks to DaemonarchWJ for reporting the bug!)
+
 v1.5 - [de9aad6]
 	1. Fixed bugs to address #2 (Thanks to AlakhaiVaynard for reporting the bug!)
 
