@@ -15,15 +15,15 @@ export class RelicPowerIconMenu {
 
 	RelicPointClicked(relic) {
 		if (!relic.isUnlocked) {
-			if (game.archaeology.currentRelicPoints > 0) {
-				game.archaeology.UnlockRelic(relic);
+			if (game.minusNolldagArchaeology.currentRelicPoints > 0) {
+				game.minusNolldagArchaeology.UnlockRelic(relic);
 				this.SetUnlocked();
 			} else {
-				notifyPlayer(game.archaeology, getLangString("TOAST_NOT_ENOUGH_RELIC_POINTS"), "danger");
+				notifyPlayer(game.minusNolldagArchaeology, getLangString("TOAST_NOT_ENOUGH_RELIC_POINTS"), "danger");
 			}
 		} else {
-			if (game.archaeology.currentRelicPowers.EquipRelic(relic)) {
-				game.archaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
+			if (game.minusNolldagArchaeology.currentRelicPowers.EquipRelic(relic)) {
+				game.minusNolldagArchaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
 			}
 		}
 	}

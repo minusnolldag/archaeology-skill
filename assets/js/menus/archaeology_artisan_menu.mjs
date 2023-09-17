@@ -1,8 +1,8 @@
 export class ArchaeologyArtisanMenu extends HTMLElement {
 	constructor() {
 		super();
-		game.archaeology.archaeologyArtisanMenu = this;
-		this.skill = game.archaeology;
+		game.minusNolldagArchaeology.archaeologyArtisanMenu = this;
+		this.skill = game.minusNolldagArchaeology;
 		this.progressTimestamp = 0;
 		this.progressInterval = 0;
 		this.noneSelected = true;
@@ -32,7 +32,7 @@ export class ArchaeologyArtisanMenu extends HTMLElement {
 		//this.mastery = new MasteryDisplay();
 		//this.mastery.classList.add("mastery-6");
 
-		this.productImage.src = game.archaeology.media;
+		this.productImage.src = game.minusNolldagArchaeology.media;
 		this.grants.hideMastery();
 	}
 

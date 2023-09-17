@@ -29,12 +29,12 @@ export class EquippedRelics {
 					}
 				}
 			} else {
-				notifyPlayer(game.archaeology, templateString(getLangString("TOAST_MAX_RELICS_EQUIPPED"), {
+				notifyPlayer(game.minusNolldagArchaeology, templateString(getLangString("TOAST_MAX_RELICS_EQUIPPED"), {
 					number: this.maxRelics
 				}), "danger");
 			}
 		} else {
-			notifyPlayer(game.archaeology, templateString(getLangString("TOAST_RELIC_ALREADY_EQUIPPED"), {
+			notifyPlayer(game.minusNolldagArchaeology, templateString(getLangString("TOAST_RELIC_ALREADY_EQUIPPED"), {
 				name: relic.name
 			}), "danger");
 		}
@@ -52,7 +52,7 @@ export class EquippedRelics {
 			}
 		}
 
-		game.archaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
+		game.minusNolldagArchaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
 	}
 
 	encode(writer) {
@@ -78,6 +78,6 @@ export class EquippedRelics {
 			this.AddRelic();
 		}
 
-		game.archaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
+		game.minusNolldagArchaeology.arcanumObeliskMenu.UpdateCurrentRelicPowers();
 	}
 }

@@ -148,14 +148,14 @@ export class ArchaeologySelectedCollectionMenu {
 				selectedBox.classList.replace("spell-not-selected", "spell-selected");
 				requiredItem.returned = true;
 				this.CheckIfAllReturned();
-				game.archaeology.archaeologyCollectionsMenu.UpdateCollectionsContainerList();
+				game.minusNolldagArchaeology.archaeologyCollectionsMenu.UpdateCollectionsContainerList();
 			} else {
-				notifyPlayer(game.archaeology, templateString(getLangString("TOAST_COLLECTION_REQUIRED_ITEM"), {
+				notifyPlayer(game.minusNolldagArchaeology, templateString(getLangString("TOAST_COLLECTION_REQUIRED_ITEM"), {
 					name: this.collection.name
 				}), "danger");
 			}
 		} else {
-			notifyPlayer(game.archaeology, getLangString("TOAST_COLLECTION_ALREADY_RETURNED"), "danger");
+			notifyPlayer(game.minusNolldagArchaeology, getLangString("TOAST_COLLECTION_ALREADY_RETURNED"), "danger");
 		}
 	}
 
@@ -183,12 +183,12 @@ export class ArchaeologySelectedCollectionMenu {
 		}
 
 		if (this.collection.rewardXp > 0) {
-			rewards.addXP(game.archaeology, this.collection.rewardXp);
+			rewards.addXP(game.minusNolldagArchaeology, this.collection.rewardXp);
 		}
 
 		rewards.forceGiveRewards();
-		game.archaeology.AddRelicPoint(1);
-		game.archaeology.archaeologyCollectionsMenu.collectionsList.forEach((collectionMenu) => {
+		game.minusNolldagArchaeology.AddRelicPoint(1);
+		game.minusNolldagArchaeology.archaeologyCollectionsMenu.collectionsList.forEach((collectionMenu) => {
 			if (collectionMenu.collection == this.collection) {
 				collectionMenu.link.setAttribute("style", "background-color: #2D5223 !important;");
 			}

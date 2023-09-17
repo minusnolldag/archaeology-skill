@@ -49,8 +49,8 @@ export async function setup({ loadTemplates, loadStylesheet, loadModule, patch, 
 	const { Archaeology } = await loadModule("assets/js/archaeology.mjs");
 
 	console.log("Registering Archaeology Skill");
-	game.archaeology = await game.registerSkill(archaeologyNamespace, Archaeology);
-	game.archaeology.LastConstructor(ArchaeologyActionEvent, ArcanumObeliskRelics, EquippedRelics, DigSites, ExcavationHotspot, WorkbenchRecipe, Collections, RenderQueue);
+	game.minusNolldagArchaeology = await game.registerSkill(archaeologyNamespace, Archaeology);
+	game.minusNolldagArchaeology.LastConstructor(ArchaeologyActionEvent, ArcanumObeliskRelics, EquippedRelics, DigSites, ExcavationHotspot, WorkbenchRecipe, Collections, RenderQueue);
 
 	console.log("Registering Archaeology Data");
 	await gameData.addPackage("assets/json/data.json");

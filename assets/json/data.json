@@ -2195,6 +2195,118 @@
 						"weight": 1
 					}
 				]
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Archaeologists_Hat",
+				"name": "Archaeologists Hat",
+				"category": "Summoning",
+				"type": "Equipment",
+				"media": "assets/img/skilling_outfits/archaeologists_hat.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2000,
+				"customDescription": "+2% Archaeology Skill XP<br><span class=\"text-warning\">With all four Archaeologists Outfit equipped: +8% Archaeology Mastery XP</span>",
+				"tier": "none",
+				"validSlots": [
+					"Helmet"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [],
+				"equipmentStats": [],
+				"modifiers": {
+					"increasedSkillXP": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 2
+						}
+					]
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Archaeologists_Body",
+				"name": "Archaeologists Body",
+				"category": "Summoning",
+				"type": "Equipment",
+				"media": "assets/img/skilling_outfits/archaeologists_body.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2000,
+				"customDescription": "+2% Archaeology Skill XP<br><span class=\"text-warning\">With all four Archaeologists Outfit equipped: +8% Archaeology Mastery XP</span>",
+				"tier": "none",
+				"validSlots": [
+					"Platebody"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [],
+				"equipmentStats": [],
+				"modifiers": {
+					"increasedSkillXP": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 2
+						}
+					]
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Archaeologists_Leggings",
+				"name": "Archaeologists Leggings",
+				"category": "Summoning",
+				"type": "Equipment",
+				"media": "assets/img/skilling_outfits/archaeologists_leggings.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2000,
+				"customDescription": "+2% Archaeology Skill XP<br><span class=\"text-warning\">With all four Archaeologists Outfit equipped: +8% Archaeology Mastery XP</span>",
+				"tier": "none",
+				"validSlots": [
+					"Platelegs"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [],
+				"equipmentStats": [],
+				"modifiers": {
+					"increasedSkillXP": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 2
+						}
+					]
+				}
+			},
+			{
+				"itemType": "Equipment",
+				"id": "Archaeologists_Boots",
+				"name": "Archaeologists Boots",
+				"category": "Summoning",
+				"type": "Equipment",
+				"media": "assets/img/skilling_outfits/archaeologists_boots.png",
+				"ignoreCompletion": false,
+				"obtainFromItemLog": false,
+				"golbinRaidExclusive": false,
+				"sellsFor": 2000,
+				"customDescription": "+2% Archaeology Skill XP<br><span class=\"text-warning\">With all four Archaeologists Outfit equipped: +8% Archaeology Mastery XP</span>",
+				"tier": "none",
+				"validSlots": [
+					"Boots"
+				],
+				"occupiesSlots": [],
+				"equipRequirements": [],
+				"equipmentStats": [],
+				"modifiers": {
+					"increasedSkillXP": [
+						{
+							"skillID": "archaeology_skill:Archaeology",
+							"value": 2
+						}
+					]
+				}
 			}
 		],
 		"pets": [
@@ -2897,7 +3009,183 @@
 				"defaultBuyLimit": 1,
 				"buyLimitOverrides": [],
 				"showBuyLimit": false
-			}	
+			},
+			{
+				"id": "Archaeologists_Hat",
+				"media": "assets/img/skilling_outfits/archaeologists_hat.png",
+				"category": "melvorF:Township",
+				"contains": {
+					"items": [
+						{
+							"id": "archaeology_skill:Archaeologists_Hat",
+							"quantity": 1
+						}
+					]
+				},
+				"cost": {
+					"gp": {
+						"type": "Fixed",
+						"cost": 100000
+					},
+					"slayerCoins": {
+						"type": "Fixed",
+						"cost": 0
+					},
+					"items": [],
+					"raidCoins": {
+						"type": "Fixed",
+						"cost": 0
+					}
+				},
+				"allowQuantityPurchase": false,
+				"unlockRequirements": [],
+				"purchaseRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Township",
+						"level": 10
+					},
+					{
+						"type": "TownshipTask",
+						"count": 20
+					}
+				],
+				"defaultBuyLimit": 0,
+				"buyLimitOverrides": [],
+				"showBuyLimit": false
+			},
+			{
+				"id": "Archaeologists_Body",
+				"media": "assets/img/skilling_outfits/archaeologists_body.png",
+				"category": "melvorF:Township",
+				"contains": {
+					"items": [
+						{
+							"id": "archaeology_skill:Archaeologists_Body",
+							"quantity": 1
+						}
+					]
+				},
+				"cost": {
+					"gp": {
+						"type": "Fixed",
+						"cost": 100000
+					},
+					"slayerCoins": {
+						"type": "Fixed",
+						"cost": 0
+					},
+					"items": [],
+					"raidCoins": {
+						"type": "Fixed",
+						"cost": 0
+					}
+				},
+				"allowQuantityPurchase": false,
+				"unlockRequirements": [],
+				"purchaseRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Township",
+						"level": 20
+					},
+					{
+						"type": "TownshipTask",
+						"count": 40
+					}
+				],
+				"defaultBuyLimit": 0,
+				"buyLimitOverrides": [],
+				"showBuyLimit": false
+			},
+			{
+				"id": "Archaeologists_Leggings",
+				"media": "assets/img/skilling_outfits/archaeologists_leggings.png",
+				"category": "melvorF:Township",
+				"contains": {
+					"items": [
+						{
+							"id": "archaeology_skill:Archaeologists_Leggings",
+							"quantity": 1
+						}
+					]
+				},
+				"cost": {
+					"gp": {
+						"type": "Fixed",
+						"cost": 100000
+					},
+					"slayerCoins": {
+						"type": "Fixed",
+						"cost": 0
+					},
+					"items": [],
+					"raidCoins": {
+						"type": "Fixed",
+						"cost": 0
+					}
+				},
+				"allowQuantityPurchase": false,
+				"unlockRequirements": [],
+				"purchaseRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Township",
+						"level": 40
+					},
+					{
+						"type": "TownshipTask",
+						"count": 60
+					}
+				],
+				"defaultBuyLimit": 0,
+				"buyLimitOverrides": [],
+				"showBuyLimit": false
+			},
+			{
+				"id": "Archaeologists_Boots",
+				"media": "assets/img/skilling_outfits/archaeologists_boots.png",
+				"category": "melvorF:Township",
+				"contains": {
+					"items": [
+						{
+							"id": "archaeology_skill:Archaeologists_Boots",
+							"quantity": 1
+						}
+					]
+				},
+				"cost": {
+					"gp": {
+						"type": "Fixed",
+						"cost": 100000
+					},
+					"slayerCoins": {
+						"type": "Fixed",
+						"cost": 0
+					},
+					"items": [],
+					"raidCoins": {
+						"type": "Fixed",
+						"cost": 0
+					}
+				},
+				"allowQuantityPurchase": false,
+				"unlockRequirements": [],
+				"purchaseRequirements": [
+					{
+						"type": "SkillLevel",
+						"skillID": "melvorD:Township",
+						"level": 60
+					},
+					{
+						"type": "TownshipTask",
+						"count": 80
+					}
+				],
+				"defaultBuyLimit": 0,
+				"buyLimitOverrides": [],
+				"showBuyLimit": false
+			}
 		],
 		"shopDisplayOrder": [
 			{
@@ -2905,6 +3193,16 @@
 				"afterID": "melvorF:Agility_Skillcape",
 				"ids": [
 					"archaeology_skill:Archaeology_Skillcape"
+				]
+			},
+			{
+				"insertAt": "After",
+				"afterID": "melvorF:Star_Gazing_Boots",
+				"ids": [
+					"archaeology_skill:Archaeologists_Hat",
+					"archaeology_skill:Archaeologists_Body",
+					"archaeology_skill:Archaeologists_Leggings",
+					"archaeology_skill:Archaeologists_Boots"
 				]
 			}
 		],

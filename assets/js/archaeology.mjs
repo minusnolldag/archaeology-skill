@@ -1,6 +1,10 @@
 export class Archaeology extends ArtisanSkill {
 	constructor(namespace, game) {
 		super(namespace, "Archaeology", game);
+		this._events = mitt();
+        this.on = this._events.on;
+        this.off = this._events.off;
+
 		this._media = "assets/img/archaeology_skill_logo.png";
 		this.baseMasteryXP = 0;
 		this.baseFailExcavationChance = 30;
@@ -126,7 +130,7 @@ export class Archaeology extends ArtisanSkill {
 					keys.forEach((v) => {
 						if (v instanceof WeaponItem) {
 							if (v.type == "Archaeology Mattock") {
-								let a = game.archaeology.skillBonuses.get(v);
+								let a = game.minusNolldagArchaeology.skillBonuses.get(v);
 
 								if (a !== undefined) {
 									a = a.get("archaeology_decrease_excavation_interval");
@@ -158,7 +162,7 @@ export class Archaeology extends ArtisanSkill {
 				keys.forEach((v) => {
 					if (v instanceof Item) {
 						if (v.type == "Armour") {
-							let a = game.archaeology.skillBonuses.get(v);
+							let a = game.minusNolldagArchaeology.skillBonuses.get(v);
 
 							if (a !== undefined) {
 								a = a.get("archaeology_decrease_workbench_interval");
@@ -361,7 +365,7 @@ export class Archaeology extends ArtisanSkill {
 		let modifier = super.getMasteryXPModifier(action);
 
 		if (this.isPoolTierActive(0)) {
-			let c = game.archaeology.skillBonuses.get("Mastery_Pool:Tier_0").get("archaeology_increase_mastery_xp");
+			let c = game.minusNolldagArchaeology.skillBonuses.get("Mastery_Pool:Tier_0").get("archaeology_increase_mastery_xp");
 
 			if (c !== undefined) {
 				modifier += c;
@@ -451,7 +455,7 @@ export class Archaeology extends ArtisanSkill {
 		let q = quantity;
 
 		if (item.type === "Archaeology Material") {
-			if (game.archaeology.isPoolTierActive(2)) {
+			if (game.minusNolldagArchaeology.isPoolTierActive(2)) {
 				q = Math.ceil(q / 2);
 
 				if (q == 0) {
@@ -549,8 +553,8 @@ export class Archaeology extends ArtisanSkill {
 
 			const rewards = new Rewards(this.game);
 			let successChance = 100 - this.baseFailExcavationChance;
-			const currentMasteryLevel = game.archaeology.getMasteryLevel(currentExcavationHotspot);
-			const result = game.archaeology.masteryLevelUnlocks.reduce((p, c) => {
+			const currentMasteryLevel = game.minusNolldagArchaeology.getMasteryLevel(currentExcavationHotspot);
+			const result = game.minusNolldagArchaeology.masteryLevelUnlocks.reduce((p, c) => {
 				if (c.level <= currentMasteryLevel && (!p || c.level > p.level)) {
 					return c;
 				}
@@ -559,7 +563,7 @@ export class Archaeology extends ArtisanSkill {
 			});
 
 			if (result.level <= currentMasteryLevel) {
-				let c = game.archaeology.skillBonuses.get("Mastery_Level:Tier_" + result._descriptionID).get("archaeology_decrease_failed_excavation_chance");
+				let c = game.minusNolldagArchaeology.skillBonuses.get("Mastery_Level:Tier_" + result._descriptionID).get("archaeology_decrease_failed_excavation_chance");
 
 				if (c !== undefined) {
 					successChance += c;
@@ -575,7 +579,7 @@ export class Archaeology extends ArtisanSkill {
 				let doubleSoilsChance = this.baseDoubleSoilChance;
 
 				if (this.isPoolTierActive(1)) {
-					let c = game.archaeology.skillBonuses.get("Mastery_Pool:Tier_1").get("archaeology_increase_soil_double_chance");
+					let c = game.minusNolldagArchaeology.skillBonuses.get("Mastery_Pool:Tier_1").get("archaeology_increase_soil_double_chance");
 
 					if (c !== undefined) {
 						doubleSoilsChance += c;
@@ -599,7 +603,7 @@ export class Archaeology extends ArtisanSkill {
 					let findArtefactChance = this.baseFindArtefactChance;
 
 					if (this.isPoolTierActive(3)) {
-						let c = game.archaeology.skillBonuses.get("Mastery_Pool:Tier_3").get("archaeology_increase_artefact_drop_rate");
+						let c = game.minusNolldagArchaeology.skillBonuses.get("Mastery_Pool:Tier_3").get("archaeology_increase_artefact_drop_rate");
 
 						if (c !== undefined) {
 							findArtefactChance += c;
@@ -607,7 +611,7 @@ export class Archaeology extends ArtisanSkill {
 					}
 
 					if (activePotion !== undefined) {
-						let a = game.archaeology.skillBonuses.get(activePotion.id);
+						let a = game.minusNolldagArchaeology.skillBonuses.get(activePotion.id);
 
 						if (a !== undefined) {
 							a = a.get("archaeology_increase_artefact_drop_rate");
@@ -641,7 +645,8 @@ export class Archaeology extends ArtisanSkill {
 
 					currentExcavationHotspot.currentHP = 0;
 					currentExcavationHotspot.hitpoints = this.GetModifedMaxHP(currentExcavationHotspot);
-					this.game.processEvent(actionEvent, this.currentActionInterval);
+					
+					this._events.emit("action", actionEvent);
 				} else {
 					let findMaterialChance = this.baseFindMaterialChance;
 					const keys = [...game.combat.player.equipment.slotMap.keys()];
@@ -650,7 +655,7 @@ export class Archaeology extends ArtisanSkill {
 					keys.forEach((v) => {
 						if (v instanceof WeaponItem) {
 							if (v.type == "Archaeology Mattock") {
-								let a = game.archaeology.skillBonuses.get(v);
+								let a = game.minusNolldagArchaeology.skillBonuses.get(v);
 
 								if (a !== undefined) {
 									a = a.get("archaeology_increase_material_drop_rate");
@@ -1027,7 +1032,7 @@ export class Archaeology extends ArtisanSkill {
 
 		this.archaeologyMenus.digSites.forEach((digSite) => {
 			digSite.excavationHotspotButtons.forEach((excavationHotspotButton) => {
-				if (game.archaeology.level >= excavationHotspotButton.excavationHotspot.level) {
+				if (game.minusNolldagArchaeology.level >= excavationHotspotButton.excavationHotspot.level) {
 					excavationHotspotButton.SetExcavationHotspotUnlocked();
 				} else {
 					excavationHotspotButton.SetExcavationHotspotLocked();
@@ -1069,7 +1074,7 @@ export class Archaeology extends ArtisanSkill {
 
 		if (this.archaeologyArtisanMenu.selectedRecipe !== undefined) {
 			if (this.archaeologyArtisanMenu.selectedRecipe instanceof this.WorkbenchRecipe) {
-				const product = game.archaeology.actions.filter(action => action.localID == this.archaeologyArtisanMenu.selectedRecipe.localID)[0];
+				const product = game.minusNolldagArchaeology.actions.filter(action => action.localID == this.archaeologyArtisanMenu.selectedRecipe.localID)[0];
 				const costs = this.getRecipeCosts(this.archaeologyArtisanMenu.selectedRecipe);
 
 				this.menu.setSelected(this.archaeologyArtisanMenu.selectedRecipe);
@@ -1099,7 +1104,7 @@ export class Archaeology extends ArtisanSkill {
 		keys.forEach((v) => {
 			if (v instanceof Item) {
 				if (v.type == "Armour") {
-					let a = game.archaeology.skillBonuses.get(v);
+					let a = game.minusNolldagArchaeology.skillBonuses.get(v);
 
 					if (a !== undefined) {
 						a = a.get("archaeology_decrease_workbench_interval");
@@ -1164,17 +1169,17 @@ export class Archaeology extends ArtisanSkill {
 		this.readNewJoinersBook = reader.getBoolean();
 		this.foundFirstArtefact = reader.getBoolean();
 		reader.getArray((reader) => {
-			const digSite = reader.getNamespacedObject(game.archaeology.digSites);
+			const digSite = reader.getNamespacedObject(game.minusNolldagArchaeology.digSites);
 
 			reader.getArray((reader) => {
-				const excavationHotspot = reader.getNamespacedObject(game.archaeology.actions);
+				const excavationHotspot = reader.getNamespacedObject(game.minusNolldagArchaeology.actions);
 				const currentHP = reader.getInt32();
 
 				excavationHotspot.currentHP = currentHP;
 			});
 		});
 		reader.getArray((reader) => {
-			const collection = reader.getNamespacedObject(game.archaeology.collections);
+			const collection = reader.getNamespacedObject(game.minusNolldagArchaeology.collections);
 			const rewardClaimed = reader.getBoolean();
 			
 			collection.rewardClaimed = rewardClaimed;
@@ -1193,7 +1198,7 @@ export class Archaeology extends ArtisanSkill {
 		});
 		this.currentRelicPoints = reader.getInt32();
 		reader.getArray((reader) => {
-			const relic = reader.getNamespacedObject(game.archaeology.arcanumObeliskRelics);
+			const relic = reader.getNamespacedObject(game.minusNolldagArchaeology.arcanumObeliskRelics);
 			const isUnlocked = reader.getBoolean();
 
 			if (!(typeof relic === "string")) {
@@ -1206,21 +1211,21 @@ export class Archaeology extends ArtisanSkill {
 			relicMenu.UpdateLockedState();
 		});
 
-		if (game.archaeology.isActive) {
-			if (game.archaeology.selectedRecipe !== undefined) {
-				if (game.archaeology.selectedRecipe instanceof this.ExcavationHotspot) {
-					game.archaeology.archaeologyMenus.digSites.forEach((digSiteMenu) => {
+		if (game.minusNolldagArchaeology.isActive) {
+			if (game.minusNolldagArchaeology.selectedRecipe !== undefined) {
+				if (game.minusNolldagArchaeology.selectedRecipe instanceof this.ExcavationHotspot) {
+					game.minusNolldagArchaeology.archaeologyMenus.digSites.forEach((digSiteMenu) => {
 						digSiteMenu.digSite.excavationHotspots.forEach((digSite) => {
-							if (digSite === game.archaeology.selectedRecipe) {
-								digSiteMenu.selectedExcavationHotspot = game.archaeology.selectedRecipe;
-								digSiteMenu.SetSelectedExcavationHotspot(game.archaeology.selectedRecipe);
+							if (digSite === game.minusNolldagArchaeology.selectedRecipe) {
+								digSiteMenu.selectedExcavationHotspot = game.minusNolldagArchaeology.selectedRecipe;
+								digSiteMenu.SetSelectedExcavationHotspot(game.minusNolldagArchaeology.selectedRecipe);
 								digSiteMenu.SetStartButtonState(false);
 								this.renderQueue.updateExcavationHotspotHP = true;
 								this.renderQueue.progressBar = true;
 							}
 						});
 					});
-				} else if (game.archaeology.selectedRecipe instanceof this.WorkbenchRecipe) {
+				} else if (game.minusNolldagArchaeology.selectedRecipe instanceof this.WorkbenchRecipe) {
 					this.archaeologyArtisanMenu.selectedRecipe = this.selectedRecipe;
 					this.renderQueue.selectedRecipe = true;
 					this.render();
@@ -1238,12 +1243,12 @@ export class Archaeology extends ArtisanSkill {
 						}
 					}
 
-					game.archaeology.renderQueue.selectionTabs = true;
+					game.minusNolldagArchaeology.renderQueue.selectionTabs = true;
 					$("#archaeology-workbench-container").removeClass("d-none");
 					$("#archaeology-area-container").addClass("d-none");
 					$("#archaeology-collection-container").addClass("d-none");
 					$("#archaeology-arcanum-obelisk-container").addClass("d-none");
-					game.archaeology.renderQueue.progressBar = true;
+					game.minusNolldagArchaeology.renderQueue.progressBar = true;
 				}
 			}
 		}

@@ -37,32 +37,32 @@ export class OnInterfaces {
 	AddArchaeologyMenus() {
 	ui.createStatic("#archaeology-skill-mod-modal-book", document.getElementById("page-container"));
 	ui.createStatic("#archaeology-skill-mod-component", document.getElementById("main-container"));
-		game.archaeology.archaeologyMenus = new this.ArchaeologyMenu(game.archaeology, this.ArchaeologyDigSiteMenu);
-		game.archaeology.archaeologyCollectionsMenu = new this.ArchaeologyCollectionsMenu(game.archaeology);
-		new CategoryMenu("archaeology-category-menu", "horizontal-navigation-archaeology", game.archaeology.categories.allObjects, "SELECT_ARCHEOLOGY_CATEGORY", this.SwitchArchaeologyCategory);
-		game.archaeology.categories.forEach((category) => {
+		game.minusNolldagArchaeology.archaeologyMenus = new this.ArchaeologyMenu(game.minusNolldagArchaeology, this.ArchaeologyDigSiteMenu);
+		game.minusNolldagArchaeology.archaeologyCollectionsMenu = new this.ArchaeologyCollectionsMenu(game.minusNolldagArchaeology);
+		new CategoryMenu("archaeology-category-menu", "horizontal-navigation-archaeology", game.minusNolldagArchaeology.categories.allObjects, "SELECT_ARCHEOLOGY_CATEGORY", this.SwitchArchaeologyCategory);
+		game.minusNolldagArchaeology.categories.forEach((category) => {
 			if (category.id === "archaeology_skill:Dig_Sites" || category.id === "archaeology_skill:Collection" || category.id === "archaeology_skill:Arcanum_Obelisk") {
 				return;
 			}
 
-			game.archaeology.selectionTabs.set(category, new this.ArchaeologySelectionTab(category));
+			game.minusNolldagArchaeology.selectionTabs.set(category, new this.ArchaeologySelectionTab(category));
 		});
-		game.archaeology.selectionTabs.forEach((selectionTab) => {
+		game.minusNolldagArchaeology.selectionTabs.forEach((selectionTab) => {
 			selectionTab.localize();
 		});
-		game.archaeology.arcanumObeliskMenu = new this.ArcanumObeliskMenu(document.getElementById("archaeology-arcanum-obelisk-container"), this.RelicPowerIconMenu);
+		game.minusNolldagArchaeology.arcanumObeliskMenu = new this.ArcanumObeliskMenu(document.getElementById("archaeology-arcanum-obelisk-container"), this.RelicPowerIconMenu);
 	}
 
 	SwitchArchaeologyCategory(category) {
 		//console.log(ArchaeologyMenu);
 		switch (category.id) {
 			case "archaeology_skill:Workbench":
-				game.archaeology.renderQueue.selectionTabs = true;
+				game.minusNolldagArchaeology.renderQueue.selectionTabs = true;
 				$("#archaeology-workbench-container").removeClass("d-none");
 				$("#archaeology-area-container").addClass("d-none");
 				$("#archaeology-collection-container").addClass("d-none");
 				$("#archaeology-arcanum-obelisk-container").addClass("d-none");
-				game.archaeology.renderQueue.progressBar = true;
+				game.minusNolldagArchaeology.renderQueue.progressBar = true;
 	
 				break;
 			case "archaeology_skill:Collection":
@@ -73,7 +73,7 @@ export class OnInterfaces {
 	
 				break;
 			case "archaeology_skill:Arcanum_Obelisk":
-				game.archaeology.arcanumObeliskMenu.UpdateCurrentRelicPoints()
+				game.minusNolldagArchaeology.arcanumObeliskMenu.UpdateCurrentRelicPoints()
 				$("#archaeology-arcanum-obelisk-container").removeClass("d-none");
 				$("#archaeology-area-container").addClass("d-none");
 				$("#archaeology-workbench-container").addClass("d-none");
@@ -86,7 +86,7 @@ export class OnInterfaces {
 				$("#archaeology-workbench-container").addClass("d-none");
 				$("#archaeology-collection-container").addClass("d-none");
 				$("#archaeology-arcanum-obelisk-container").addClass("d-none");
-				game.archaeology.renderQueue.progressBar = true;
+				game.minusNolldagArchaeology.renderQueue.progressBar = true;
 	
 				break;
 		}

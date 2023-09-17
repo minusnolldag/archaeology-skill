@@ -23,7 +23,7 @@ export class Patches {
 	}
 
 	PatchConstructEventMatcher() {
-		this.patch(Game, "constructEventMatcher").after((o, data) => {
+		this.patch(GameEventSystem, "constructMatcher").after((o, data) => {
 			if (data.type == "ArchaeologyExcavationAction") {
 				return new ArchaeologyActionEventMatcher(data, game);
 			}
@@ -72,8 +72,8 @@ export class Patches {
 					let amount = quantity;
 		
 					if (item.type === "Archaeology Material") {
-						if (game.archaeology !== undefined) {
-							if (game.archaeology.isPoolTierActive(2)) {
+						if (game.minusNolldagArchaeology !== undefined) {
+							if (game.minusNolldagArchaeology.isPoolTierActive(2)) {
 								amount = Math.ceil(amount / 2);
 		
 								if (amount == 0) {
@@ -109,7 +109,7 @@ export class Patches {
 
 	PatchComputeModifiers() {
 		this.patch(Player, "computeModifiers").after((o) => {
-			game.archaeology.currentRelicPowers.relics.forEach((relic) => {
+			game.minusNolldagArchaeology.currentRelicPowers.relics.forEach((relic) => {
 				if (relic.modifiers !== undefined) {
 					game.combat.player.modifiers.addModifiers(relic.modifiers);
 				}
@@ -166,15 +166,15 @@ export class Patches {
 			const item = bankItem.item;
 
 			if (item instanceof AshItem) {
-				if (game.archaeology.scatterItemMenu === undefined) {
-					game.archaeology.scatterItemMenu = new this.ScatterItemMenu(bankSideBarMenu.selectedMenu.buryItemContainer);
+				if (game.minusNolldagArchaeology.scatterItemMenu === undefined) {
+					game.minusNolldagArchaeology.scatterItemMenu = new this.ScatterItemMenu(bankSideBarMenu.selectedMenu.buryItemContainer);
 				}
 
-				game.archaeology.scatterItemMenu.SetData(bankItem, item);
-				game.archaeology.scatterItemMenu.ShowContainer();
+				game.minusNolldagArchaeology.scatterItemMenu.SetData(bankItem, item);
+				game.minusNolldagArchaeology.scatterItemMenu.ShowContainer();
 			} else {
-				if (game.archaeology.scatterItemMenu !== undefined) {
-					game.archaeology.scatterItemMenu.HideContainer();
+				if (game.minusNolldagArchaeology.scatterItemMenu !== undefined) {
+					game.minusNolldagArchaeology.scatterItemMenu.HideContainer();
 				}
 			}
 		});
@@ -186,7 +186,7 @@ export class Patches {
 				if (item instanceof ReadableItem) {
 					if (item.id == "archaeology_skill:Archaeology_New_Joiner") {
 						document.getElementById("lore-Archaeology_New_Joiner-unlocked").classList.remove("d-none");
-						game.archaeology.readNewJoinersBook = true;
+						game.minusNolldagArchaeology.readNewJoinersBook = true;
 					}
 				}
 			}
@@ -199,7 +199,7 @@ export class Patches {
 				if (book instanceof LoreBook) {
 					if (book.id == "archaeology_skill:Archaeology_New_Joiner") {
 						document.getElementById("lore-Archaeology_New_Joiner-unlocked").classList.remove("d-none");
-						game.archaeology.readNewJoinersBook = true;
+						game.minusNolldagArchaeology.readNewJoinersBook = true;
 					}
 				}
 			}
@@ -305,7 +305,7 @@ export class ArchaeologyActionEventMatcher extends SkillActionEventMatcher {
 		super(options, game);
 
 		if (options.actionIDs !== undefined) {
-			this.actions = game.archaeology.actions.getSetForConstructor(options.actionIDs, this, ExcavationHotspot.name);
+			this.actions = game.minusNolldagArchaeology.actions.getSetForConstructor(options.actionIDs, this, ExcavationHotspot.name);
 		}
 	}
 
