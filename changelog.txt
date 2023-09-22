@@ -1,6 +1,13 @@
 Changelog for Archaeology Skill
 -------------------------------
 
+v1.7 - [f40ec4e]
+	1. Compatible with Atlas of Discovery (AoD) V1.2 release.
+	1. Renamed HTML container ID to not conflict with AoD skill.
+	2. Renamed game.archaeology to game.minusNolldagArchaeology to not conflict with AoD skill.
+	3. Changed game.processEvent to _events.emit due to API changes.
+	4. Changed constructEventMatcher to GameEventSystem.constructMatcher due to API changes.
+
 v1.6 - [93aed45]
 	1. Fixed a bug when modifiers.decreasedMonsterRespawnTimer is greater than Player.baseSpawnInterval. Which causes the game to crash due to Timer.start throwing an error. (Thanks to DaemonarchWJ for reporting the bug!)
 
